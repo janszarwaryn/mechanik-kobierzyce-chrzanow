@@ -4,11 +4,22 @@ Date: 2026-07-06
 
 ## Goal
 
-Reproduce the content of the static `CarService` site (business: "Mechanik
-Chrzanów" - car repair + parking blocks + bike stands) on a modern Nuxt engine,
-as a bilingual (PL/EN) marketing site with a fresh, anti-slop design. Ship as a
-new GitHub repo `janszarwaryn/mechanik-kobierzyce-chrzanow`. Built test-first
-(TDD).
+Reproduce the content of the static `CarService` site (business: car repair +
+parking blocks + bike stands) on a modern Nuxt engine, as a bilingual (PL/EN)
+marketing site with a fresh, anti-slop design, **RWD (mobile + desktop)**, and
+**strong local SEO**. Ship as a new GitHub repo
+`janszarwaryn/mechanik-kobierzyce-chrzanow`. Built test-first (TDD).
+
+Production domain: **mechanik-kobierzyce.pl** (used for canonical, sitemap, OG,
+hreflang).
+
+### Location (SEO-critical, do not confuse)
+
+The business sits in **Chrzanów - a village in gmina Kobierzyce, powiat
+wrocławski, województwo dolnośląskie** (near Wrocław). This is NOT Chrzanów in
+Małopolska. Map coordinates from source: `50.993063, 16.931976`. Local SEO
+targets: **Kobierzyce, Chrzanów, Wrocław, dolnośląskie** (gmina Kobierzyce
+first, exact locality Chrzanów).
 
 ## Source material
 
@@ -104,12 +115,62 @@ Images: port `CarService/images` + `imagesx` into `assets/img/`, serve via
 - `@nuxtjs/i18n` (pl default, en; `prefix_except_default`).
 - Tailwind v4 (Vite plugin, not the postcss `tailwindcss` plugin).
 - `@nuxt/image` (image optimization).
-- `@nuxtjs/seo` (meta, sitemap.xml, robots.txt - originals had them).
+- `@nuxtjs/seo` (meta, sitemap.xml, robots.txt, canonical, OG, JSON-LD,
+  hreflang - originals had sitemap/robots).
 - `@vueuse/motion` (scroll-reveal + hover; Vue equivalent of Motion).
 - `@phosphor-icons/vue` (icons).
 - `@fontsource/space-grotesk`, `@fontsource/inter-tight`.
 - Render mode: SSG (`nuxi generate`) - fits a static business site and
   GitHub Pages / static hosting.
+
+## SEO strategy (primary focus)
+
+Domain `mechanik-kobierzyce.pl`. Bilingual PL (default) + EN with full hreflang.
+Every page gets, via `useSiteMeta` + `@nuxtjs/seo`:
+
+- **Unique title + meta description** per page and per locale, keyworded for
+  gmina Kobierzyce + Chrzanów + Wrocław (PL) and their EN equivalents.
+- **Canonical** URL (absolute, `https://mechanik-kobierzyce.pl/...`).
+- **hreflang** alternates: `pl`, `en`, `x-default` per page.
+- **Open Graph + Twitter** cards (title, description, image, locale,
+  `og:locale:alternate`).
+- **`lang` attribute** set correctly per locale on `<html>`.
+
+Structured data (JSON-LD), site-wide + per page:
+
+- **`AutoRepair` / `LocalBusiness`** with `name`, `address`
+  (Chrzanów, gmina Kobierzyce, dolnośląskie, `55-040`), `geo`
+  (`50.993063, 16.931976`), `telephone`, `openingHoursSpecification`
+  (from harmonogram), `areaServed` (Kobierzyce, Chrzanów, Wrocław),
+  `sameAs`, `priceRange`.
+- **`Product`** JSON-LD for parking-block and bike-stand items.
+- **`BreadcrumbList`** on sub-pages.
+- **`WebSite`** + `Organization`.
+
+Technical SEO: `sitemap.xml` (all routes x both locales, via `@nuxtjs/seo`),
+`robots.txt` (allow all + sitemap ref), semantic HTML (one `h1`/page, heading
+order, `<nav>`/`<main>`/`<footer>` landmarks, descriptive `alt` on every image),
+fast SSG output for Core Web Vitals (LCP hero `priority`, no CLS, lazy
+below-fold images).
+
+## Responsive design (RWD - mobile + desktop)
+
+- Breakpoints: `sm 640 / md 768 / lg 1024 / xl 1280`. Mobile-first.
+- Every multi-column layout declares its `< 768px` single-column collapse
+  explicitly in the component (no "Tailwind handles it" assumptions).
+- Page container `max-w-7xl mx-auto`, `px-4 md:px-6 lg:px-8`.
+- Nav: single line on desktop (≤80px); hamburger drawer below `lg`.
+- Hero: `min-h-[100dvh]`, split on desktop, stacked on mobile; font scale
+  planned with the asset.
+- Tap targets ≥44px on mobile; forms full-width on mobile.
+- Verified in dev at mobile (375px) and desktop (≥1280px) widths in both
+  light and dark mode before ship.
+
+## Footer
+
+Minimalist. Contact essentials + nav + at the very bottom a single line:
+`Created by jspace.pl` where `jspace.pl` is a link to `https://jspace.pl`
+(external, `rel="noopener"`). Subtle, low-emphasis styling.
 
 ## Testing strategy (TDD - mandatory)
 
@@ -128,6 +189,14 @@ Unit / component tests:
    (e.g. `ProductCard` shows name + image + chips; `HeroSplit` renders one
    primary CTA; nav renders all 6 routes).
 5. **Route smoke** - each of the 6 pages mounts without error in both locales.
+6. **SEO meta** - each page exposes a unique non-empty title + meta
+   description; canonical is absolute under `mechanik-kobierzyce.pl`; hreflang
+   `pl`/`en`/`x-default` present.
+7. **JSON-LD** - `LocalBusiness` schema is valid and contains the correct
+   address (Chrzanów, gmina Kobierzyce, dolnośląskie), geo coords, phone, and
+   opening hours; `Product` schema present on product pages.
+8. **Footer** - renders `Created by jspace.pl` with an anchor to
+   `https://jspace.pl`.
 
 E2E (Playwright):
 
