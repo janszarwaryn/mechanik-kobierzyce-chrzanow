@@ -41,7 +41,6 @@ const cells = [
             class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
             width="640"
             height="480"
-            sizes="(max-width: 768px) 100vw, 33vw"
             loading="lazy"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-steel-950/85 via-steel-950/30 to-transparent" />

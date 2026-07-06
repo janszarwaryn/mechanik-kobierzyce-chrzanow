@@ -15,10 +15,11 @@ export default defineConfig({
     { name: 'desktop', use: { ...devices['Desktop Chrome'] } },
     { name: 'mobile', use: { ...devices['Pixel 7'] } },
   ],
+  // E2E runs against the production SSG output (stable, no HMR reloads).
   webServer: {
-    command: 'npm run dev',
+    command: 'npm run generate && npx serve .output/public -l 3000',
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
-    timeout: 120_000,
+    timeout: 240_000,
   },
 })

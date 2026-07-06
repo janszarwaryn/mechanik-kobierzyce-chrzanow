@@ -48,9 +48,6 @@ const localePath = useLocalePath()
           class="aspect-[4/3] w-full rounded-3xl object-cover shadow-xl shadow-steel-900/10 ring-1 ring-steel-200/60 dark:ring-steel-800"
           width="720"
           height="540"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          preload
-          fetchpriority="high"
           loading="eager"
         />
       </div>

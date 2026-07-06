@@ -16,7 +16,6 @@ const { t } = useI18n()
         class="size-full object-cover transition-transform duration-500 group-hover:scale-105"
         width="480"
         height="360"
-        sizes="(max-width: 768px) 100vw, 33vw"
         loading="lazy"
       />
       <span

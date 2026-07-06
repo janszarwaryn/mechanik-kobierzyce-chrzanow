@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   modules: [
     '@nuxtjs/i18n',
@@ -25,6 +25,10 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    // Pre-bundle so dev does not re-optimize mid-session (avoids full reloads).
+    optimizeDeps: {
+      include: ['@phosphor-icons/vue'],
+    },
   },
 
   // Local business site. Domain used for canonical/sitemap/OG/hreflang.

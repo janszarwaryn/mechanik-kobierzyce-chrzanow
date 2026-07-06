@@ -24,7 +24,6 @@ const images = [
           class="w-full rounded-2xl object-cover ring-1 ring-steel-200/60 dark:ring-steel-800"
           width="480"
           height="360"
-          sizes="(max-width: 768px) 50vw, 33vw"
           loading="lazy"
         />
       </Reveal>
