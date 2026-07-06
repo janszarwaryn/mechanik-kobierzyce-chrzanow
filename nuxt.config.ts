@@ -56,10 +56,22 @@ export default defineNuxtConfig({
     format: ['webp', 'jpg'],
   },
 
+  // We supply our own og:image per page; skip the runtime OG image generator
+  // (satori/chromium) which needs a browser and adds no value here.
+  ogImage: { enabled: false },
+
   app: {
     head: {
       htmlAttrs: { lang: 'pl' },
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+      script: [
+        {
+          // No-flash theme init: set data-theme before first paint.
+          innerHTML:
+            "(function(){try{var t=localStorage.getItem('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.dataset.theme=t;}catch(e){}})();",
+          tagPosition: 'head',
+        },
+      ],
     },
   },
 })
