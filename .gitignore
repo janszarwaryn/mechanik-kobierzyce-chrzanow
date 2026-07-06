@@ -1,0 +1,21 @@
+# reference clones (not part of this project)
+/CarService/
+/boilerplate-next-i18n/
+
+# deps / build
+node_modules/
+.nuxt/
+.output/
+dist/
+.data/
+
+# env / local
+.env
+.env.*
+!.env.example
+
+# misc
+.DS_Store
+*.log
+.vscode/
+.idea/
