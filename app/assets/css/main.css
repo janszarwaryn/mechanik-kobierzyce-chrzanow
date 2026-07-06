@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+/* Dark mode driven by a data attribute on <html> (manual toggle),
+   falling back to the OS preference. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+@theme {
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+
+  /* Steel / zinc neutrals + one locked safety-amber accent. */
+  --color-accent-50: #fffbeb;
+  --color-accent-100: #fef3c7;
+  --color-accent-300: #fcd34d;
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  --color-accent-700: #b45309;
+
+  --color-steel-50: #fafafa;
+  --color-steel-100: #f4f4f5;
+  --color-steel-200: #e4e4e7;
+  --color-steel-300: #d4d4d8;
+  --color-steel-400: #a1a1aa;
+  --color-steel-500: #71717a;
+  --color-steel-600: #52525b;
+  --color-steel-700: #3f3f46;
+  --color-steel-800: #27272a;
+  --color-steel-900: #18181b;
+  --color-steel-950: #0b0b0d;
+
+  --radius-card: 1rem;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-steel-50);
+  color: var(--color-steel-900);
+}
+
+[data-theme='dark'] body {
+  background: var(--color-steel-950);
+  color: var(--color-steel-100);
+}
+
+::selection {
+  background: var(--color-accent-500);
+  color: #0b0b0d;
+}

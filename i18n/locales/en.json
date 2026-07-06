@@ -1,0 +1,209 @@
+{
+  "brand": {
+    "name": "Mechanik Kobierzyce",
+    "tagline": "Garage, parking blocks and bike stands"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "blocks": "Parking blocks",
+    "stands": "Bike stands",
+    "about": "About blocks",
+    "contact": "Contact"
+  },
+  "cta": {
+    "book": "Book a visit",
+    "offer": "See the offer",
+    "call": "Call us",
+    "contact": "Get in touch",
+    "route": "Get directions",
+    "more": "See more"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Chrzanów, Kobierzyce municipality",
+      "title": "Car service and parking products in the Kobierzyce area",
+      "subtitle": "Car garage, tyre service, parking blocks and bike stands. Chrzanów near Wrocław, over 20 years of experience.",
+      "imageAlt": "Mechanic at work in a car garage in Chrzanów"
+    },
+    "offer": {
+      "title": "Three things we do well",
+      "blocks": {
+        "title": "Parking blocks",
+        "desc": "Solid U, M and Butterfly type blocks. Secure your parking spot."
+      },
+      "stands": {
+        "title": "Bike stands",
+        "desc": "Galvanised bike stands for companies, communities and institutions."
+      },
+      "service": {
+        "title": "Car service",
+        "desc": "Tyre changes, suspension, mechanics and general repairs."
+      }
+    },
+    "experience": {
+      "value": "20+",
+      "label": "years of experience",
+      "title": "Experience you can rely on",
+      "desc": "For over two decades we have repaired cars and produced blocks and stands for customers in Kobierzyce, Chrzanów and Wrocław."
+    },
+    "gallery": {
+      "title": "Our work"
+    },
+    "reviews": {
+      "title": "Customer reviews"
+    },
+    "contactCta": {
+      "title": "Need help?",
+      "desc": "Call or write to us. We will advise and quote the service."
+    }
+  },
+  "services": {
+    "title": "Car services",
+    "subtitle": "Car mechanics workshop in Chrzanów, Kobierzyce municipality.",
+    "items": {
+      "tires": {
+        "title": "Tyre repair and replacement",
+        "desc": "Vulcanisation, replacement and balancing of tyres for cars and vans."
+      },
+      "suspension": {
+        "title": "Suspension repair",
+        "desc": "Diagnostics and repair of shock absorbers, arms and suspension parts."
+      },
+      "mechanics": {
+        "title": "Car mechanics",
+        "desc": "General mechanics, inspections and routine vehicle repairs."
+      },
+      "gasket": {
+        "title": "Head gasket replacement",
+        "desc": "Head gasket repair and leak elimination."
+      },
+      "parts": {
+        "title": "Fitting supplied parts",
+        "desc": "We fit parts supplied by the customer."
+      },
+      "general": {
+        "title": "General repair",
+        "desc": "Comprehensive car repair in one place."
+      }
+    }
+  },
+  "blocks": {
+    "title": "Parking blocks Kobierzyce and Wrocław",
+    "subtitle": "For you and your company. A parking block made to measure.",
+    "specLabel": "Type",
+    "items": {
+      "u": {
+        "title": "Parking barrier - U type block",
+        "desc": "A classic U-shaped block. Durable and universal.",
+        "spec": "Type U"
+      },
+      "m": {
+        "title": "Parking barrier TYPE M",
+        "desc": "A stable M type block for business and private spots.",
+        "spec": "Type M"
+      },
+      "butterfly": {
+        "title": "Parking barrier BUTTERFLY type",
+        "desc": "A folding Butterfly type block with easy opening.",
+        "spec": "Butterfly"
+      }
+    }
+  },
+  "stands": {
+    "title": "Bike stands Kobierzyce and Wrocław",
+    "subtitle": "For you and your company. A bike stand made to measure.",
+    "specLabel": "Model",
+    "items": {
+      "arc": {
+        "title": "Galvanised \"arc\" bike stand",
+        "desc": "A galvanised arc-shaped stand. Resistant to weather conditions.",
+        "spec": "Model 1"
+      },
+      "s2": {
+        "title": "Bike stand #2",
+        "desc": "A multi-space bike stand for public spaces.",
+        "spec": "Model 2"
+      },
+      "s3": {
+        "title": "Bike stand #3",
+        "desc": "A compact stand, perfect in front of a shop or office.",
+        "spec": "Model 3"
+      },
+      "s4": {
+        "title": "Bike stand #4",
+        "desc": "A solid stand permanently mounted to the ground.",
+        "spec": "Model 4"
+      }
+    }
+  },
+  "about": {
+    "title": "About the parking block",
+    "subtitle": "Take care of the security of your parking spot.",
+    "body1": "Powder-coated parking blocks are resistant to corrosion and weather. They protect a parking spot from being taken by unauthorised people.",
+    "body2": "We offer blocks in several types - U, M and the folding Butterfly. Each block is mounted permanently, and the key stays only with the owner.",
+    "keywordsTitle": "Keywords",
+    "keywords": "parking blocks, parking block Kobierzyce, blocks Wrocław, bike stands, mechanic Chrzanów"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Stay in contact with us.",
+    "addressTitle": "Address",
+    "hoursTitle": "Opening hours",
+    "phoneTitle": "Phone",
+    "emailTitle": "E-mail",
+    "form": {
+      "name": "Full name",
+      "email": "E-mail",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Thank you! We will get back to you soon.",
+      "error": "Please correct the highlighted fields.",
+      "errName": "Please enter your full name.",
+      "errEmail": "Please enter a valid e-mail address.",
+      "errPhone": "Please enter a valid phone number.",
+      "errMessage": "The message is too short."
+    }
+  },
+  "hours": {
+    "monFri": "Monday - Friday",
+    "sat": "Saturday",
+    "sun": "Sunday",
+    "closed": "Closed"
+  },
+  "footer": {
+    "about": "Car garage, parking blocks and bike stands in Chrzanów, Kobierzyce municipality.",
+    "nav": "Navigation",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "createdBy": "Created by"
+  },
+  "seo": {
+    "home": {
+      "title": "Mechanik Kobierzyce | Garage, parking blocks, bike stands - Chrzanów",
+      "description": "Car garage, tyre service, parking blocks and bike stands. Chrzanów, Kobierzyce municipality near Wrocław. Over 20 years of experience."
+    },
+    "services": {
+      "title": "Car services Kobierzyce | Mechanic and tyre service Chrzanów",
+      "description": "Tyre changes, suspension repair, car mechanics and parts fitting. Mechanics workshop in Chrzanów, Kobierzyce municipality."
+    },
+    "blocks": {
+      "title": "Parking blocks Kobierzyce and Wrocław | U, M, Butterfly types",
+      "description": "Made-to-measure parking blocks - U, M and folding Butterfly. Sales and mounting in the Kobierzyce area and Wrocław."
+    },
+    "stands": {
+      "title": "Bike stands Kobierzyce and Wrocław | Galvanised bike stands",
+      "description": "Galvanised bike stands for companies, communities and institutions. Kobierzyce, Chrzanów and Wrocław."
+    },
+    "about": {
+      "title": "About parking blocks | Mechanik Kobierzyce",
+      "description": "How powder-coated parking blocks work and how to secure a parking spot. Kobierzyce, Wrocław."
+    },
+    "contact": {
+      "title": "Contact | Mechanik Kobierzyce - Chrzanów, Lipowa 24A",
+      "description": "Contact the workshop in Chrzanów, Kobierzyce municipality. Phone, e-mail, address and opening hours."
+    }
+  }
+}
