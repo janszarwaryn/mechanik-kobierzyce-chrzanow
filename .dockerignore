@@ -1,0 +1,17 @@
+node_modules
+.output
+.nuxt
+dist
+.data
+.git
+.github
+CarService
+boilerplate-next-i18n
+tests
+test-results
+playwright-report
+docs
+*.log
+.DS_Store
+.env
+.env.*

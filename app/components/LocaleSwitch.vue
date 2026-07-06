@@ -3,7 +3,7 @@ const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
 const other = computed(() =>
-  (locales.value as { code: string }[]).find((l) => l.code !== locale.value),
+  (locales.value as { code: 'pl' | 'en' }[]).find((l) => l.code !== locale.value),
 )
 </script>
 

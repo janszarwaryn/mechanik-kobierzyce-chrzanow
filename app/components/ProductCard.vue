@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ProductItem } from '~/types/content'
 
-const props = defineProps<{ product: ProductItem; specLabel: string }>()
+defineProps<{ product: ProductItem; specLabel: string }>()
 const { t } = useI18n()
 </script>
 

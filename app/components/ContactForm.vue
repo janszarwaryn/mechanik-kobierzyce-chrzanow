@@ -36,7 +36,7 @@ const fieldClass =
           type="text"
           :class="[fieldClass, errors.name ? 'border-red-500' : 'border-steel-300 dark:border-steel-700']"
           :aria-invalid="!!errors.name"
-        />
+        >
         <p v-if="errors.name" class="text-xs text-red-600">{{ t(`contact.form.${errors.name}`) }}</p>
       </div>
 
@@ -50,7 +50,7 @@ const fieldClass =
           type="tel"
           :class="[fieldClass, errors.phone ? 'border-red-500' : 'border-steel-300 dark:border-steel-700']"
           :aria-invalid="!!errors.phone"
-        />
+        >
         <p v-if="errors.phone" class="text-xs text-red-600">{{ t(`contact.form.${errors.phone}`) }}</p>
       </div>
     </div>
@@ -65,7 +65,7 @@ const fieldClass =
         type="email"
         :class="[fieldClass, errors.email ? 'border-red-500' : 'border-steel-300 dark:border-steel-700']"
         :aria-invalid="!!errors.email"
-      />
+      >
       <p v-if="errors.email" class="text-xs text-red-600">{{ t(`contact.form.${errors.email}`) }}</p>
     </div>
 

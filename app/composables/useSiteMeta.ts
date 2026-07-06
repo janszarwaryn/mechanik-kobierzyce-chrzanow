@@ -1,5 +1,4 @@
-import { useI18n, useLocaleHead } from '#imports'
-import { useHead, useSeoMeta } from '#imports'
+import { useI18n, useLocaleHead, useHead, useSeoMeta } from '#imports'
 
 /**
  * Per-page SEO wiring: unique title + description (from `seo.<page>` i18n keys),
@@ -11,7 +10,7 @@ import { useHead, useSeoMeta } from '#imports'
  */
 export function useSiteMeta(pageKey: string, ogImage = '/img/about.jpg') {
   const { t, locale } = useI18n()
-  const localeHead = useLocaleHead({ addSeoAttributes: true })
+  const localeHead = useLocaleHead()
 
   const title = () => t(`seo.${pageKey}.title`)
   const description = () => t(`seo.${pageKey}.description`)

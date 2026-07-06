@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   modules: [
+    '@nuxt/eslint',
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@vueuse/motion/nuxt',
@@ -46,7 +47,6 @@ export default defineNuxtConfig({
     defaultLocale: 'pl',
     strategy: 'prefix_except_default',
     langDir: 'locales',
-    bundle: { optimizeTranslationDirective: false },
     baseUrl: 'https://mechanik-kobierzyce.pl',
     detectBrowserLanguage: {
       useCookie: true,

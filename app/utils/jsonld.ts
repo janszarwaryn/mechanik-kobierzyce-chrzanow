@@ -17,7 +17,7 @@ interface OpeningHoursSpec {
 function parseHours(value: string): { opens: string; closes: string } {
   const [open, close] = value.split('-').map((s) => s.trim())
   const pad = (t: string) => {
-    const [h, m = '00'] = t.split(':')
+    const [h = '0', m = '00'] = t.split(':')
     return `${h.padStart(2, '0')}:${m.padStart(2, '0')}`
   }
   return { opens: pad(open ?? ''), closes: pad(close ?? '') }

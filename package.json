@@ -30,13 +30,16 @@
   "devDependencies": {
     "@fontsource/inter-tight": "^5.2.5",
     "@fontsource/space-grotesk": "^5.2.5",
-    "@nuxt/test-utils": "^3.19.2",
+    "@nuxt/eslint": "^1.16.0",
+    "@nuxt/test-utils": "^3.23.0",
     "@playwright/test": "^1.56.0",
     "@tailwindcss/vite": "^4.1.14",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.37.0",
     "happy-dom": "^20.0.0",
     "tailwindcss": "^4.1.14",
-    "vitest": "^3.2.4"
+    "typescript": "^6.0.3",
+    "vitest": "^3.2.4",
+    "vue-tsc": "^3.3.6"
   }
 }
