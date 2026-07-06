@@ -1,3 +1,8 @@
+<script setup lang="ts">
+// Site-wide AutoRepair / LocalBusiness structured data on every page.
+useLocalBusinessSchema()
+</script>
+
 <template>
   <div class="flex min-h-[100dvh] flex-col">
     <AppHeader />
