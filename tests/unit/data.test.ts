@@ -4,6 +4,7 @@ import { resolve } from 'node:path'
 import { services } from '../../app/data/services'
 import { productGroups, blocks, stands } from '../../app/data/products'
 import { reviews } from '../../app/data/reviews'
+import { faq } from '../../app/data/faq'
 import { site } from '../../app/data/site'
 
 const root = resolve(__dirname, '../..')
@@ -62,6 +63,20 @@ describe('reviews data', () => {
       expect(r.text.en.trim().length).toBeGreaterThan(0)
       expect(r.rating).toBeGreaterThanOrEqual(1)
       expect(r.rating).toBeLessThanOrEqual(5)
+    }
+  })
+})
+
+describe('faq data', () => {
+  it('has unique ids and bilingual, non-empty Q&A', () => {
+    const ids = faq.map((f) => f.id)
+    expect(new Set(ids).size).toBe(ids.length)
+    expect(faq.length).toBeGreaterThanOrEqual(3)
+    for (const f of faq) {
+      for (const l of ['pl', 'en'] as const) {
+        expect(f.q[l].trim().length, `${f.id}.q.${l}`).toBeGreaterThan(5)
+        expect(f.a[l].trim().length, `${f.id}.a.${l}`).toBeGreaterThan(10)
+      }
     }
   })
 })

@@ -9,6 +9,7 @@ useSiteMeta('home')
     <ExperienceBand />
     <WorkGallery />
     <ReviewCarousel />
+    <FaqSection />
     <ContactCta />
   </div>
 </template>

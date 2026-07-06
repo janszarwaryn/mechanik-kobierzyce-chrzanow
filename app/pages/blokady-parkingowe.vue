@@ -4,6 +4,7 @@ import { site } from '~/data/site'
 
 const { t } = useI18n()
 useSiteMeta('blocks', '/img/blokada_1_1.jpg')
+usePageBreadcrumb(t('blocks.title'))
 
 useProductSchema(
   blocks.items.map((p) => ({

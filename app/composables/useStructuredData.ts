@@ -1,22 +1,51 @@
-import { useHead } from '#imports'
+import { useHead, useI18n, useRoute, useLocalePath } from '#imports'
 import { site } from '~/data/site'
-import { buildLocalBusiness, buildProduct } from '~/utils/jsonld'
-import type { ProductInput } from '~/utils/jsonld'
+import {
+  buildLocalBusiness,
+  buildProduct,
+  buildOrganization,
+  buildWebSite,
+  buildBreadcrumb,
+  buildFAQ,
+} from '~/utils/jsonld'
+import type { ProductInput, Crumb, QA } from '~/utils/jsonld'
 
 function inject(node: object) {
   useHead({
-    script: [
-      { type: 'application/ld+json', innerHTML: JSON.stringify(node) },
-    ],
+    script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(node) }],
   })
 }
 
-/** Site-wide AutoRepair / LocalBusiness node. */
-export function useLocalBusinessSchema() {
-  inject(buildLocalBusiness(site))
+/** Site-wide AutoRepair LocalBusiness (+ optional service OfferCatalog),
+ *  Organization and WebSite nodes. */
+export function useLocalBusinessSchema(offers: string[] = [], siteName = 'Mechanik Kobierzyce') {
+  inject(buildLocalBusiness(site, offers))
+  inject(buildOrganization(site))
+  inject(buildWebSite(site, siteName))
 }
 
 /** Product nodes for a product page. */
 export function useProductSchema(products: ProductInput[]) {
   for (const p of products) inject(buildProduct(p))
+}
+
+/** FAQPage node (answer-engine optimization). */
+export function useFaqSchema(items: QA[]) {
+  inject(buildFAQ(items))
+}
+
+/** BreadcrumbList node for a sub-page. */
+export function useBreadcrumbSchema(items: Crumb[]) {
+  inject(buildBreadcrumb(items))
+}
+
+/** Breadcrumb for a sub-page: Home -> current page. */
+export function usePageBreadcrumb(currentName: string) {
+  const { t } = useI18n()
+  const route = useRoute()
+  const localePath = useLocalePath()
+  useBreadcrumbSchema([
+    { name: t('nav.home'), url: `${site.url}${localePath('/')}` },
+    { name: currentName, url: `${site.url}${route.path}` },
+  ])
 }

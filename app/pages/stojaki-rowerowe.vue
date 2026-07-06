@@ -4,6 +4,7 @@ import { site } from '~/data/site'
 
 const { t } = useI18n()
 useSiteMeta('stands', '/img/stojak_1_1.jpg')
+usePageBreadcrumb(t('stands.title'))
 
 useProductSchema(
   stands.items.map((p) => ({

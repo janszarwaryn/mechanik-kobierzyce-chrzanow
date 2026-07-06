@@ -38,6 +38,25 @@ test.describe('SEO', () => {
     expect(joined).toContain('AutoRepair')
     expect(joined).toContain('Chrzanów')
     expect(joined).toContain('50.993063')
+    // GEO + AEO signals
+    expect(joined).toContain('FAQPage')
+    expect(joined).toContain('Organization')
+    await expect(page.locator('meta[name="keywords"]')).toHaveAttribute(
+      'content',
+      /mechanik Kobierzyce/,
+    )
+    await expect(page.locator('meta[name="geo.region"]')).toHaveAttribute('content', 'PL-DS')
+  })
+
+  test('a sub-page emits a BreadcrumbList', async ({ page }) => {
+    await page.goto('/uslugi')
+    const ld = (await page.locator('script[type="application/ld+json"]').allTextContents()).join('')
+    expect(ld).toContain('BreadcrumbList')
+  })
+
+  test('renders visible FAQ questions on a sub-page', async ({ page }) => {
+    await page.goto('/uslugi')
+    await expect(page.getByText('Jakie usługi samochodowe oferujecie?')).toBeVisible()
   })
 
   test('footer credits jspace.pl with a link', async ({ page }) => {

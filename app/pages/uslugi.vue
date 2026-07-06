@@ -3,6 +3,7 @@ import { services } from '~/data/services'
 
 const { t } = useI18n()
 useSiteMeta('services')
+usePageBreadcrumb(t('services.title'))
 </script>
 
 <template>
@@ -21,5 +22,7 @@ useSiteMeta('services')
         </div>
       </div>
     </section>
+
+    <FaqSection />
   </div>
 </template>

@@ -37,6 +37,7 @@ watch(() => route.fullPath, () => (open.value = false))
           v-for="l in links"
           :key="l.key"
           :to="localePath(l.path)"
+          :aria-label="l.path === '/' ? t('nav.homeAria') : undefined"
           class="rounded-full px-3 py-2 text-sm font-medium text-steel-600 transition-colors hover:bg-steel-100 hover:text-steel-900 dark:text-steel-300 dark:hover:bg-steel-800 dark:hover:text-steel-50"
           active-class="!text-accent-600 dark:!text-accent-400"
         >
@@ -78,6 +79,7 @@ watch(() => route.fullPath, () => (open.value = false))
           v-for="l in links"
           :key="l.key"
           :to="localePath(l.path)"
+          :aria-label="l.path === '/' ? t('nav.homeAria') : undefined"
           class="block rounded-lg px-3 py-3 text-base font-medium text-steel-700 hover:bg-steel-100 dark:text-steel-200 dark:hover:bg-steel-800"
           active-class="!text-accent-600 dark:!text-accent-400"
         >

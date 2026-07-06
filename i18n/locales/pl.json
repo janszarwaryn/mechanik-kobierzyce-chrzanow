@@ -9,7 +9,8 @@
     "blocks": "Blokady parkingowe",
     "stands": "Stojaki rowerowe",
     "about": "O blokadach",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "homeAria": "Strona główna - Mechanik Kobierzyce"
   },
   "cta": {
     "book": "Umów wizytę",
@@ -183,27 +184,37 @@
   "seo": {
     "home": {
       "title": "Mechanik Kobierzyce - Warsztat, blokady parkingowe, stojaki rowerowe - Chrzanów",
-      "description": "Warsztat samochodowy, wulkanizacja, blokady parkingowe i stojaki rowerowe. Chrzanów, gmina Kobierzyce koło Wrocławia. Ponad 20 lat doświadczenia."
+      "description": "Warsztat samochodowy, wulkanizacja, blokady parkingowe i stojaki rowerowe. Chrzanów, gmina Kobierzyce koło Wrocławia. Ponad 20 lat doświadczenia.",
+      "keywords": "mechanik Kobierzyce, warsztat samochodowy Chrzanów, wulkanizacja Kobierzyce, blokady parkingowe, stojaki rowerowe, serwis samochodowy Wrocław, naprawa aut Kobierzyce"
     },
     "services": {
       "title": "Usługi samochodowe Kobierzyce - Mechanik i wulkanizacja Chrzanów",
-      "description": "Wymiana opon, naprawa zawieszenia, mechanika samochodowa i montaż części. Zakład mechaniki w Chrzanowie, gmina Kobierzyce."
+      "description": "Wymiana opon, naprawa zawieszenia, mechanika samochodowa i montaż części. Zakład mechaniki w Chrzanowie, gmina Kobierzyce.",
+      "keywords": "usługi samochodowe Kobierzyce, mechanik Chrzanów, wymiana opon, naprawa zawieszenia, wulkanizacja, montaż części, naprawa aut Wrocław"
     },
     "blocks": {
       "title": "Blokady parkingowe Kobierzyce i Wrocław - Typ U, M, Motyl",
-      "description": "Blokady parkingowe na miarę - typ U, M i składany Motyl. Sprzedaż i montaż w gminie Kobierzyce i we Wrocławiu."
+      "description": "Blokady parkingowe na miarę - typ U, M i składany Motyl. Sprzedaż i montaż w gminie Kobierzyce i we Wrocławiu.",
+      "keywords": "blokady parkingowe Kobierzyce, blokada parkingowa Wrocław, zapora parkingowa typ U, typ M, Motyl, blokady parkingowe dolnośląskie"
     },
     "stands": {
       "title": "Stojaki rowerowe Kobierzyce i Wrocław - Ocynkowane stojaki na rowery",
-      "description": "Ocynkowane stojaki rowerowe dla firm, wspólnot i instytucji. Kobierzyce, Chrzanów i Wrocław."
+      "description": "Ocynkowane stojaki rowerowe dla firm, wspólnot i instytucji. Kobierzyce, Chrzanów i Wrocław.",
+      "keywords": "stojaki rowerowe Kobierzyce, stojak na rowery Wrocław, ocynkowane stojaki rowerowe, stojaki rowerowe dla firm"
     },
     "about": {
       "title": "Opis blokad parkingowych - Mechanik Kobierzyce",
-      "description": "Jak działają blokady parkingowe malowane proszkowo i jak zabezpieczyć miejsce postojowe. Kobierzyce, Wrocław."
+      "description": "Jak działają blokady parkingowe malowane proszkowo i jak zabezpieczyć miejsce postojowe. Kobierzyce, Wrocław.",
+      "keywords": "opis blokad parkingowych, blokady malowane proszkowo, jak zabezpieczyć miejsce parkingowe, blokady Kobierzyce"
     },
     "contact": {
       "title": "Kontakt - Mechanik Kobierzyce - Chrzanów, Lipowa 24A",
-      "description": "Skontaktuj się z warsztatem w Chrzanowie, gmina Kobierzyce. Telefon, e-mail, adres i godziny otwarcia."
+      "description": "Skontaktuj się z warsztatem w Chrzanowie, gmina Kobierzyce. Telefon, e-mail, adres i godziny otwarcia.",
+      "keywords": "kontakt mechanik Kobierzyce, warsztat Chrzanów Lipowa 24A, telefon serwis samochodowy Kobierzyce"
     }
+  },
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "subtitle": "Mechanik, blokady parkingowe i stojaki rowerowe - Kobierzyce, Chrzanów, Wrocław."
   }
 }

@@ -10,6 +10,9 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:3000',
     trace: 'on-first-retry',
+    // Pin to the default locale so the root browser-language redirect does not
+    // make root-page assertions non-deterministic.
+    locale: 'pl-PL',
   },
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'] } },

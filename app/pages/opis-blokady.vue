@@ -2,6 +2,7 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 useSiteMeta('about', '/img/blokada_2_1.jpg')
+usePageBreadcrumb(t('about.title'))
 </script>
 
 <template>

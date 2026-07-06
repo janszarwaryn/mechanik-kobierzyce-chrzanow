@@ -1,6 +1,11 @@
 <script setup lang="ts">
-// Site-wide AutoRepair / LocalBusiness structured data on every page.
-useLocalBusinessSchema()
+import { services } from '~/data/services'
+
+// Site-wide AutoRepair / LocalBusiness (+ service OfferCatalog), Organization
+// and WebSite structured data on every page.
+const { t } = useI18n()
+const offers = services.map((s) => t(`${s.key}.title`))
+useLocalBusinessSchema(offers, t('brand.name'))
 </script>
 
 <template>

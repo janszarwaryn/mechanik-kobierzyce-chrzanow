@@ -3,6 +3,7 @@ import { site } from '~/data/site'
 
 const { t } = useI18n()
 useSiteMeta('contact')
+usePageBreadcrumb(t('contact.title'))
 </script>
 
 <template>

@@ -23,7 +23,7 @@ function parseHours(value: string): { opens: string; closes: string } {
   return { opens: pad(open ?? ''), closes: pad(close ?? '') }
 }
 
-export function buildLocalBusiness(s: SiteInfo) {
+export function buildLocalBusiness(s: SiteInfo, offers: string[] = []) {
   const openingHoursSpecification: OpeningHoursSpec[] = s.hours
     .filter((h) => h.value !== null)
     .map((h) => ({
@@ -57,6 +57,91 @@ export function buildLocalBusiness(s: SiteInfo) {
     },
     areaServed: s.areaServed,
     openingHoursSpecification,
+    hasMap: s.mapLink,
+    knowsLanguage: ['pl', 'en'],
+    paymentAccepted: 'Cash, Card',
+    currenciesAccepted: 'PLN',
+    ...(offers.length
+      ? {
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'Usługi',
+            itemListElement: offers.map((name) => ({
+              '@type': 'Offer',
+              itemOffered: { '@type': 'Service', name },
+            })),
+          },
+        }
+      : {}),
+  }
+}
+
+export function buildOrganization(s: SiteInfo) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${s.url}/#org`,
+    name: s.legalName,
+    url: s.url,
+    logo: `${s.url}/favicon.png`,
+    email: s.email,
+    telephone: s.phones[0],
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: s.address.street,
+      addressLocality: s.address.locality,
+      postalCode: s.address.postalCode,
+      addressRegion: s.address.region,
+      addressCountry: s.address.country,
+    },
+    areaServed: s.areaServed,
+  }
+}
+
+export function buildWebSite(s: SiteInfo, name: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${s.url}/#website`,
+    url: s.url,
+    name,
+    inLanguage: ['pl-PL', 'en-US'],
+    publisher: { '@id': `${s.url}/#org` },
+  }
+}
+
+export interface Crumb {
+  name: string
+  url: string
+}
+
+export function buildBreadcrumb(items: Crumb[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      item: c.url,
+    })),
+  }
+}
+
+export interface QA {
+  q: string
+  a: string
+}
+
+export function buildFAQ(items: QA[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
   }
 }
 
