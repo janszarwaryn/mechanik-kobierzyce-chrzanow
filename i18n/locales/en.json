@@ -200,7 +200,11 @@
         "desc": "A solid stand permanently mounted to the ground.",
         "spec": "Model 4"
       }
-    }
+    },
+    "lead": "Made-to-measure galvanised bike stands - for companies, housing communities, schools and institutions in the Kobierzyce municipality and Wrocław. Permanently mounted to the ground, resistant to weather and corrosion.",
+    "useTitle": "Who are the bike stands for?",
+    "useBody": "Stands work well in front of offices, shops, blocks, public offices and schools. We advise on the model and number of spaces, then make and install them - including custom orders.",
+    "galleryTitle": "Bike stand projects"
   },
   "about": {
     "title": "About the parking block",
@@ -208,7 +212,10 @@
     "body1": "Powder-coated parking blocks are resistant to corrosion and weather. They protect a parking spot from being taken by unauthorised people.",
     "body2": "We offer blocks in several types - U, M and the folding Butterfly. Each block is mounted permanently, and the key stays only with the owner.",
     "keywordsTitle": "Keywords",
-    "keywords": "parking blocks, parking block Kobierzyce, blocks Wrocław, bike stands, mechanic Chrzanów"
+    "keywords": "parking blocks, parking block Kobierzyce, blocks Wrocław, bike stands, mechanic Chrzanów",
+    "body3": "A parking block is the simplest way to reserve a parking spot just for you. Installation takes a moment, and the solid powder-coated construction effectively deters unauthorised people.",
+    "body4": "We make and install blocks across the Kobierzyce municipality, in Chrzanów and in Wrocław. We advise the block type suited to your spot and surface - U, M or the folding Butterfly.",
+    "galleryTitle": "Our parking blocks"
   },
   "contact": {
     "title": "Get in touch",

@@ -200,7 +200,11 @@
         "desc": "Solidny stojak montowany na stałe do podłoża.",
         "spec": "Model 4"
       }
-    }
+    },
+    "lead": "Ocynkowane stojaki rowerowe szyte na miarę - dla firm, wspólnot mieszkaniowych, szkół i instytucji w gminie Kobierzyce i we Wrocławiu. Montujemy je na stałe do podłoża, odporne na warunki atmosferyczne i korozję.",
+    "useTitle": "Dla kogo stojaki rowerowe?",
+    "useBody": "Stojaki sprawdzają się przed biurami, sklepami, blokami, urzędami i szkołami. Doradzimy model i liczbę stanowisk, wykonamy i zamontujemy - także na indywidualne zamówienie.",
+    "galleryTitle": "Realizacje stojaków rowerowych"
   },
   "about": {
     "title": "Opis blokady parkingowej",
@@ -208,7 +212,10 @@
     "body1": "Blokady parkingowe malowane proszkowo są odporne na korozję i warunki atmosferyczne. Zabezpieczają miejsce postojowe przed zajęciem przez osoby niepowołane.",
     "body2": "Oferujemy blokady w kilku typach - U, M oraz składany Motyl. Każdą blokadę montujemy na stałe, a klucz pozostaje wyłącznie w rękach właściciela.",
     "keywordsTitle": "Słowa kluczowe",
-    "keywords": "blokady parkingowe, blokada parkingowa Kobierzyce, blokady Wrocław, stojaki rowerowe, mechanik Chrzanów"
+    "keywords": "blokady parkingowe, blokada parkingowa Kobierzyce, blokady Wrocław, stojaki rowerowe, mechanik Chrzanów",
+    "body3": "Blokada parkingowa to najprostszy sposób, by zarezerwować miejsce postojowe wyłącznie dla siebie. Montaż zajmuje chwilę, a solidna, malowana proszkowo konstrukcja skutecznie odstrasza osoby niepowołane.",
+    "body4": "Wykonujemy i montujemy blokady na terenie gminy Kobierzyce, w Chrzanowie oraz we Wrocławiu. Doradzimy typ blokady dopasowany do Twojego miejsca i nawierzchni - U, M lub składany Motyl.",
+    "galleryTitle": "Nasze blokady parkingowe"
   },
   "contact": {
     "title": "Skontaktuj się",

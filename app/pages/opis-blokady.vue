@@ -14,6 +14,8 @@ usePageBreadcrumb(t('about.title'))
         <article class="prose-steel max-w-none space-y-5 text-lg leading-relaxed text-steel-700 dark:text-steel-300">
           <p>{{ t('about.body1') }}</p>
           <p>{{ t('about.body2') }}</p>
+          <p>{{ t('about.body3') }}</p>
+          <p>{{ t('about.body4') }}</p>
           <div class="flex flex-wrap gap-3 pt-2">
             <BaseButton :to="localePath('/blokady-parkingowe')">
               {{ t('nav.blocks') }}
@@ -42,6 +44,30 @@ usePageBreadcrumb(t('about.title'))
             <p class="mt-2 text-sm text-steel-600 dark:text-steel-400">{{ t('about.keywords') }}</p>
           </div>
         </aside>
+      </div>
+
+      <!-- blocks gallery -->
+      <div class="mt-16">
+        <Reveal>
+          <SectionHeading :title="t('about.galleryTitle')" />
+        </Reveal>
+        <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <Reveal
+            v-for="(img, i) in ['/img/blokada_1_2.jpg', '/img/blokada_1_3.jpg', '/img/blokada_2_2.jpg', '/img/blokada_3_2.jpg']"
+            :key="img"
+            :delay="i * 60"
+          >
+            <NuxtImg
+              :src="img"
+              :alt="`${t('about.galleryTitle')} ${i + 1}`"
+              class="aspect-square w-full rounded-2xl bg-steel-100 object-cover ring-1 ring-steel-200/60"
+              width="360"
+              height="360"
+              loading="lazy"
+              :placeholder="[30, 30, 50, 4]"
+            />
+          </Reveal>
+        </div>
       </div>
     </section>
   </div>

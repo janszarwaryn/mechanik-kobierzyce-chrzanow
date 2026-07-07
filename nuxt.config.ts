@@ -36,12 +36,6 @@ export default defineNuxtConfig({
         'vue-i18n',
       ],
     },
-    // Warm up the most-used entry modules so the first navigation compiles fast.
-    server: {
-      warmup: {
-        clientFiles: ['./app/app.vue', './app/layouts/default.vue', './app/pages/index.vue'],
-      },
-    },
   },
 
   // Local business site. Domain used for canonical/sitemap/OG/hreflang.

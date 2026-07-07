@@ -6,8 +6,8 @@ const { t } = useI18n()
 const localePath = useLocalePath()
 
 const productLinks = [
-  { key: 'nav.blocks', path: '/blokady-parkingowe' },
-  { key: 'nav.stands', path: '/stojaki-rowerowe' },
+  { key: 'nav.blocks', path: '/blokady-parkingowe', icon: 'PhShieldCheck' },
+  { key: 'nav.stands', path: '/stojaki-rowerowe', icon: 'PhBicycle' },
 ]
 const tailLinks = [
   { key: 'nav.about', path: '/opis-blokady' },
@@ -82,8 +82,33 @@ onUnmounted(() => {
           </div>
         </div>
 
+        <!-- Produkty dropdown -->
+        <div class="group relative">
+          <button
+            type="button"
+            class="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-steel-600 transition-colors hover:bg-steel-100 hover:text-steel-900 group-focus-within:bg-steel-100"
+            aria-haspopup="true"
+          >
+            {{ t('nav.products') }}
+            <AppIcon name="PhCaretDown" :size="14" class="transition-transform group-hover:rotate-180" />
+          </button>
+          <div
+            class="invisible absolute left-0 top-full z-50 w-64 translate-y-1 rounded-2xl border border-steel-200 bg-steel-50 p-2 opacity-0 shadow-xl shadow-steel-900/10 transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100"
+          >
+            <NuxtLink
+              v-for="l in productLinks"
+              :key="l.key"
+              :to="localePath(l.path)"
+              class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-steel-700 transition-colors hover:bg-steel-100"
+            >
+              <AppIcon :name="l.icon" :size="18" class="text-accent-500" />
+              {{ t(l.key) }}
+            </NuxtLink>
+          </div>
+        </div>
+
         <NuxtLink
-          v-for="l in [...productLinks, ...tailLinks]"
+          v-for="l in tailLinks"
           :key="l.key"
           :to="localePath(l.path)"
           class="rounded-full px-3 py-2 text-sm font-medium text-steel-600 transition-colors hover:bg-steel-100 hover:text-steel-900"
