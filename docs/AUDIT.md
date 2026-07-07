@@ -35,6 +35,21 @@ Date: 2026-07-06
   blokady parkingowe, stojaki rowerowe + locality terms).
 - Fixed non-descriptive home nav link text flagged by the link checker.
 
+**SEO gap pass (research-backed: Apify SERP/forum scrape + Ref docs):**
+- Added `AggregateRating` + `Review` nodes to LocalBusiness (star rich results
+  in Google).
+- Expanded FAQ with real forum-style questions (timing-belt duration, original
+  vs replacement parts, fitting supplied parts, paid diagnostics, appointments)
+  for AEO / "People Also Ask".
+- Added trust/reassurance copy per the competitor set (original + trusted
+  replacement parts, diagnosis included, upfront quote, supplied-part fitting).
+- Expanded keyword coverage (wymiana rozrządu, sprzęgła, klocków, oleju,
+  diagnostyka) reflecting real forum queries.
+- Added `apple-touch-icon`, `site.webmanifest`, `theme-color`, absolute
+  `og:image` + `og:image:alt`, `og:site_name`.
+- **Known gap (future):** competitors also list *klimatyzacja* and *diagnostyka
+  komputerowa*; add as services if the business offers them.
+
 ### Security
 
 - **SQL injection: not applicable.** The site is a static Nuxt SSG build served

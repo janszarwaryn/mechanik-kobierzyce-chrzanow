@@ -23,7 +23,17 @@ function parseHours(value: string): { opens: string; closes: string } {
   return { opens: pad(open ?? ''), closes: pad(close ?? '') }
 }
 
-export function buildLocalBusiness(s: SiteInfo, offers: string[] = []) {
+export interface ReviewInput {
+  author: string
+  rating: number
+  body: string
+}
+
+export function buildLocalBusiness(
+  s: SiteInfo,
+  offers: string[] = [],
+  reviews: ReviewInput[] = [],
+) {
   const openingHoursSpecification: OpeningHoursSpec[] = s.hours
     .filter((h) => h.value !== null)
     .map((h) => ({
@@ -71,6 +81,29 @@ export function buildLocalBusiness(s: SiteInfo, offers: string[] = []) {
               itemOffered: { '@type': 'Service', name },
             })),
           },
+        }
+      : {}),
+    ...(reviews.length
+      ? {
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: Number(
+              (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1),
+            ),
+            reviewCount: reviews.length,
+            bestRating: 5,
+            worstRating: 1,
+          },
+          review: reviews.map((r) => ({
+            '@type': 'Review',
+            author: { '@type': 'Person', name: r.author },
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: r.rating,
+              bestRating: 5,
+            },
+            reviewBody: r.body,
+          })),
         }
       : {}),
   }

@@ -8,7 +8,7 @@ import {
   buildBreadcrumb,
   buildFAQ,
 } from '~/utils/jsonld'
-import type { ProductInput, Crumb, QA } from '~/utils/jsonld'
+import type { ProductInput, Crumb, QA, ReviewInput } from '~/utils/jsonld'
 
 function inject(node: object) {
   useHead({
@@ -18,8 +18,12 @@ function inject(node: object) {
 
 /** Site-wide AutoRepair LocalBusiness (+ optional service OfferCatalog),
  *  Organization and WebSite nodes. */
-export function useLocalBusinessSchema(offers: string[] = [], siteName = 'Mechanik Kobierzyce') {
-  inject(buildLocalBusiness(site, offers))
+export function useLocalBusinessSchema(
+  offers: string[] = [],
+  siteName = 'Mechanik Kobierzyce',
+  reviews: ReviewInput[] = [],
+) {
+  inject(buildLocalBusiness(site, offers, reviews))
   inject(buildOrganization(site))
   inject(buildWebSite(site, siteName))
 }

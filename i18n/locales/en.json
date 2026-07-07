@@ -132,7 +132,26 @@
     "why3Body": "Chrzanów in the Kobierzyce municipality - minutes from the city.",
     "bestHook": "The best mechanic in the Kobierzyce municipality",
     "bestDesc": "Garage, tyre service and car repair in Chrzanów - honest, professional, minutes from Wrocław.",
-    "detailsEyebrow": "Scope of services"
+    "detailsEyebrow": "Scope of services",
+    "trustTitle": "Repairs you can rely on",
+    "trust": {
+      "t1": {
+        "title": "Original parts and trusted replacements",
+        "body": "We fit originals or reputable replacements - we advise, and the choice is always yours."
+      },
+      "t2": {
+        "title": "Diagnostics included in the repair",
+        "body": "We find the cause on the specific components first, then confirm the scope and cost."
+      },
+      "t3": {
+        "title": "Honest quote upfront",
+        "body": "Scope and price agreed before work starts - no surprises at pickup."
+      },
+      "t4": {
+        "title": "Fitting supplied parts",
+        "body": "Buy the part online or in a shop, we fit it professionally - you pay only for labour."
+      }
+    }
   },
   "blocks": {
     "title": "Parking blocks Kobierzyce and Wrocław",
@@ -230,12 +249,12 @@
     "home": {
       "title": "Mechanik Kobierzyce - Garage, parking blocks, bike stands - Chrzanów",
       "description": "Car garage, tyre service, parking blocks and bike stands. Chrzanów, Kobierzyce municipality near Wrocław. Over 20 years of experience.",
-      "keywords": "mechanic Kobierzyce, car garage Chrzanów, tyre service Kobierzyce, parking blocks, bike stands, car service Wrocław, car repair Kobierzyce"
+      "keywords": "mechanic Kobierzyce, car garage Chrzanów, tyre service Kobierzyce, tyre change Wrocław, timing belt change, clutch replacement, brake pad replacement, oil change, computer diagnostics, parking blocks, bike stands, car repair Kobierzyce"
     },
     "services": {
       "title": "Car services Kobierzyce - Mechanic and tyre service Chrzanów",
       "description": "Tyre changes, suspension repair, car mechanics and parts fitting. Mechanics workshop in Chrzanów, Kobierzyce municipality.",
-      "keywords": "car services Kobierzyce, mechanic Chrzanów, tyre change, suspension repair, tyre service, parts fitting, car repair Wrocław"
+      "keywords": "car services Kobierzyce, mechanic Chrzanów, tyre service, tyre change, suspension repair, timing belt change, clutch replacement, brake pad replacement, oil change, head gasket, fitting supplied parts, diagnostics, car repair Wrocław"
     },
     "blocks": {
       "title": "Parking blocks Kobierzyce and Wrocław - U, M, Butterfly types",

@@ -61,6 +61,27 @@ describe('buildLocalBusiness offers', () => {
   })
 })
 
+describe('buildLocalBusiness reviews', () => {
+  const ld = buildLocalBusiness(site, [], [
+    { author: 'Marek W.', rating: 5, body: 'Solidnie i szybko.' },
+    { author: 'Anna K.', rating: 4, body: 'Uczciwa wycena.' },
+  ])
+  it('adds aggregateRating with average and count', () => {
+    expect(ld.aggregateRating['@type']).toBe('AggregateRating')
+    expect(ld.aggregateRating.ratingValue).toBe(4.5)
+    expect(ld.aggregateRating.reviewCount).toBe(2)
+  })
+  it('adds Review nodes with author and rating', () => {
+    expect(ld.review.length).toBe(2)
+    expect(ld.review[0]['@type']).toBe('Review')
+    expect(ld.review[0].author.name).toBe('Marek W.')
+    expect(ld.review[0].reviewRating.ratingValue).toBe(5)
+  })
+  it('omits rating fields when no reviews', () => {
+    expect(buildLocalBusiness(site).aggregateRating).toBeUndefined()
+  })
+})
+
 describe('buildOrganization / buildWebSite', () => {
   it('builds an Organization with logo and address', () => {
     const org = buildOrganization(site)

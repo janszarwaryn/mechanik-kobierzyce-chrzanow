@@ -11,6 +11,13 @@ const why = [
   { icon: 'PhCheckCircle', key: 'why2' },
   { icon: 'PhMapPin', key: 'why3' },
 ]
+
+const trust = [
+  { icon: 'PhWrench', key: 't1' },
+  { icon: 'PhGauge', key: 't2' },
+  { icon: 'PhCheckCircle', key: 't3' },
+  { icon: 'PhToolbox', key: 't4' },
+]
 </script>
 
 <template>
@@ -107,6 +114,30 @@ const why = [
             </BaseButton>
           </div>
         </Reveal>
+      </div>
+    </section>
+
+    <!-- trust / values band (SEO reassurance copy) -->
+    <section class="border-t border-steel-200 bg-steel-100">
+      <div class="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20 lg:px-8">
+        <Reveal>
+          <SectionHeading :title="t('services.trustTitle')" />
+        </Reveal>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <Reveal v-for="(item, i) in trust" :key="item.key" :delay="i * 70">
+            <div class="flex h-full flex-col gap-3">
+              <span class="grid size-11 place-items-center rounded-xl bg-accent-500/15 text-accent-600">
+                <AppIcon :name="item.icon" :size="22" />
+              </span>
+              <h3 class="font-display font-bold text-steel-900">
+                {{ t(`services.trust.${item.key}.title`) }}
+              </h3>
+              <p class="text-sm leading-relaxed text-steel-600">
+                {{ t(`services.trust.${item.key}.body`) }}
+              </p>
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
 

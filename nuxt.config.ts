@@ -80,7 +80,15 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       htmlAttrs: { lang: 'pl' },
-      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'apple-touch-icon', href: '/favicon.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
+      ],
+      meta: [
+        { name: 'theme-color', content: '#f59e0b' },
+        { name: 'format-detection', content: 'telephone=no' },
+      ],
     },
   },
 })

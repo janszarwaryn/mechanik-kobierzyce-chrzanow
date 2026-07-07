@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import { services } from '~/data/services'
+import { reviews } from '~/data/reviews'
 
-// Site-wide AutoRepair / LocalBusiness (+ service OfferCatalog), Organization
-// and WebSite structured data on every page.
-const { t } = useI18n()
+// Site-wide AutoRepair / LocalBusiness (+ service OfferCatalog, aggregateRating
+// and reviews), Organization and WebSite structured data on every page.
+const { t, locale } = useI18n()
 const offers = services.map((s) => t(`${s.key}.title`))
-useLocalBusinessSchema(offers, t('brand.name'))
+const reviewLd = reviews.map((r) => ({
+  author: r.author,
+  rating: r.rating,
+  body: locale.value === 'en' ? r.text.en : r.text.pl,
+}))
+useLocalBusinessSchema(offers, t('brand.name'), reviewLd)
 </script>
 
 <template>

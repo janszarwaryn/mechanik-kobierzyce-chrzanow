@@ -132,7 +132,26 @@
     "why3Body": "Chrzanów w gminie Kobierzyce - kilkanaście minut od miasta.",
     "bestHook": "Najlepszy mechanik w gminie Kobierzyce",
     "bestDesc": "Warsztat, wulkanizacja i naprawa aut w Chrzanowie - uczciwie, fachowo, kilkanaście minut od Wrocławia.",
-    "detailsEyebrow": "Zakres usług"
+    "detailsEyebrow": "Zakres usług",
+    "trustTitle": "Naprawa, na której możesz polegać",
+    "trust": {
+      "t1": {
+        "title": "Oryginalne części i sprawdzone zamienniki",
+        "body": "Montujemy oryginały lub markowe zamienniki - doradzamy, a wybór zawsze należy do Ciebie."
+      },
+      "t2": {
+        "title": "Diagnoza w cenie naprawy",
+        "body": "Najpierw ustalamy przyczynę usterki konkretnych podzespołów, potem potwierdzamy zakres i koszt."
+      },
+      "t3": {
+        "title": "Uczciwa wycena z góry",
+        "body": "Zakres i cenę naprawy ustalamy przed rozpoczęciem prac - bez niespodzianek przy odbiorze."
+      },
+      "t4": {
+        "title": "Montaż części powierzonych",
+        "body": "Kupujesz część online lub w sklepie, my montujemy fachowo - płacisz tylko za robociznę."
+      }
+    }
   },
   "blocks": {
     "title": "Blokady parkingowe Kobierzyce i Wrocław",
@@ -230,12 +249,12 @@
     "home": {
       "title": "Mechanik Kobierzyce - Warsztat, blokady parkingowe, stojaki rowerowe - Chrzanów",
       "description": "Warsztat samochodowy, wulkanizacja, blokady parkingowe i stojaki rowerowe. Chrzanów, gmina Kobierzyce koło Wrocławia. Ponad 20 lat doświadczenia.",
-      "keywords": "mechanik Kobierzyce, warsztat samochodowy Chrzanów, wulkanizacja Kobierzyce, blokady parkingowe, stojaki rowerowe, serwis samochodowy Wrocław, naprawa aut Kobierzyce"
+      "keywords": "mechanik Kobierzyce, warsztat samochodowy Chrzanów, wulkanizacja Kobierzyce, wymiana opon Wrocław, wymiana rozrządu, wymiana sprzęgła, wymiana klocków hamulcowych, wymiana oleju, diagnostyka komputerowa, blokady parkingowe, stojaki rowerowe, naprawa aut Kobierzyce"
     },
     "services": {
       "title": "Usługi samochodowe Kobierzyce - Mechanik i wulkanizacja Chrzanów",
       "description": "Wymiana opon, naprawa zawieszenia, mechanika samochodowa i montaż części. Zakład mechaniki w Chrzanowie, gmina Kobierzyce.",
-      "keywords": "usługi samochodowe Kobierzyce, mechanik Chrzanów, wymiana opon, naprawa zawieszenia, wulkanizacja, montaż części, naprawa aut Wrocław"
+      "keywords": "usługi samochodowe Kobierzyce, mechanik Chrzanów, wulkanizacja, wymiana opon, naprawa zawieszenia, wymiana rozrządu Kobierzyce, wymiana sprzęgła, wymiana klocków hamulcowych, wymiana oleju, uszczelka pod głowicą, montaż części powierzonych, diagnostyka, naprawa aut Wrocław"
     },
     "blocks": {
       "title": "Blokady parkingowe Kobierzyce i Wrocław - Typ U, M, Motyl",

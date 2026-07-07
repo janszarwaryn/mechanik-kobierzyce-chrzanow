@@ -16,6 +16,8 @@ export function useSiteMeta(pageKey: string, ogImage = '/img/about.jpg') {
   const title = () => t(`seo.${pageKey}.title`)
   const description = () => t(`seo.${pageKey}.description`)
   const keywords = () => t(`seo.${pageKey}.keywords`)
+  // Absolute OG image URL for crawlers.
+  const absImage = ogImage.startsWith('http') ? ogImage : `${site.url}${ogImage}`
 
   useHead(() => ({
     title: title(),
@@ -38,12 +40,14 @@ export function useSiteMeta(pageKey: string, ogImage = '/img/about.jpg') {
     ogTitle: title,
     ogDescription: description,
     ogType: 'website',
-    ogImage,
+    ogImage: absImage,
+    ogImageAlt: title,
     ogLocale: () => (locale.value === 'pl' ? 'pl_PL' : 'en_US'),
     ogLocaleAlternate: () => (locale.value === 'pl' ? 'en_US' : 'pl_PL'),
+    ogSiteName: 'Mechanik Kobierzyce',
     twitterCard: 'summary_large_image',
     twitterTitle: title,
     twitterDescription: description,
-    twitterImage: ogImage,
+    twitterImage: absImage,
   })
 }

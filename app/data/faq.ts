@@ -62,4 +62,59 @@ export const faq: FaqItem[] = [
       en: 'Yes. We make galvanised bike stands for companies, communities and institutions, permanently mounted to the ground.',
     },
   },
+  {
+    id: 'timing',
+    q: {
+      pl: 'Ile trwa wymiana rozrządu?',
+      en: 'How long does a timing belt change take?',
+    },
+    a: {
+      pl: 'Zwykle od kilku godzin do jednego dnia roboczego, zależnie od modelu auta i zakresu (sam pasek czy z rolkami i pompą). Termin i czas potwierdzamy przy przyjęciu samochodu.',
+      en: 'Usually from a few hours to one working day, depending on the car model and scope (belt only or with rollers and water pump). We confirm the exact time when you drop the car off.',
+    },
+  },
+  {
+    id: 'original',
+    q: {
+      pl: 'Montujecie oryginalne części czy zamienniki?',
+      en: 'Do you fit original parts or replacements?',
+    },
+    a: {
+      pl: 'Montujemy zarówno części oryginalne, jak i sprawdzone zamienniki renomowanych producentów. Doradzamy, co się opłaca przy Twoim aucie, a wybór zawsze należy do Ciebie.',
+      en: 'We fit both original parts and trusted replacements from reputable brands. We advise what makes sense for your car, and the choice is always yours.',
+    },
+  },
+  {
+    id: 'supplied',
+    q: {
+      pl: 'Czy zamontujecie części kupione przeze mnie?',
+      en: 'Will you fit parts I bought myself?',
+    },
+    a: {
+      pl: 'Tak, montujemy części powierzone przez klienta. Robociznę wyceniamy z góry, więc oszczędzasz na częściach bez niespodzianek przy odbiorze.',
+      en: 'Yes, we fit customer-supplied parts. We quote the labour upfront, so you save on parts with no surprises at pickup.',
+    },
+  },
+  {
+    id: 'diagnosis',
+    q: {
+      pl: 'Czy diagnostyka usterki jest płatna?',
+      en: 'Do you charge for fault diagnostics?',
+    },
+    a: {
+      pl: 'Diagnozę konkretnych podzespołów wykonujemy w ramach naprawy - najpierw ustalamy przyczynę, a zakres i koszt potwierdzamy przed rozpoczęciem prac.',
+      en: 'We diagnose the specific components as part of the repair - we find the cause first, then confirm the scope and cost before starting work.',
+    },
+  },
+  {
+    id: 'appointment',
+    q: {
+      pl: 'Czy trzeba umawiać się wcześniej?',
+      en: 'Do I need to book in advance?',
+    },
+    a: {
+      pl: 'Najlepiej zadzwonić i umówić termin - dzięki temu przygotujemy części i skrócimy czas naprawy. Drobne sprawy jak wulkanizacja często załatwiamy od ręki.',
+      en: 'It is best to call and book a slot - that way we prepare the parts and shorten the repair time. Small jobs like tyre repair are often done on the spot.',
+    },
+  },
 ]
