@@ -26,9 +26,21 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
-    // Pre-bundle so dev does not re-optimize mid-session (avoids full reloads).
+    // Pre-bundle heavy deps once at dev startup so Vite does not re-optimize
+    // mid-session (which triggers slow full page reloads).
     optimizeDeps: {
-      include: ['@phosphor-icons/vue'],
+      include: [
+        '@phosphor-icons/vue',
+        '@vueuse/core',
+        '@vueuse/motion',
+        'vue-i18n',
+      ],
+    },
+    // Warm up the most-used entry modules so the first navigation compiles fast.
+    server: {
+      warmup: {
+        clientFiles: ['./app/app.vue', './app/layouts/default.vue', './app/pages/index.vue'],
+      },
     },
   },
 

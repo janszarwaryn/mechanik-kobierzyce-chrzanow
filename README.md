@@ -22,6 +22,11 @@ Production domain: **mechanik-kobierzyce.pl**
 
 ## Scripts
 
+> Use **npm** (the repo is locked with `package-lock.json`). Running `yarn`
+> creates a second lockfile, re-resolves the dependency tree on every start
+> (slow `yarn dev`) and can drift transitive versions - which breaks the Nuxt
+> test environment. `npm run dev` cold-starts in ~6-7s; warm navigations ~80ms.
+
 ```bash
 npm run dev        # dev server (http://localhost:3000)
 npm run generate   # static SSG build -> .output/public

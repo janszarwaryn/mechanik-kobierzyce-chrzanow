@@ -49,6 +49,24 @@ Date: 2026-07-06
   (self + inline for hydration, Google Maps frame only).
 - **External links:** all `target="_blank"` links use `rel="noopener"`.
 
+### Performance
+
+Measured on the production SSG build served statically:
+
+| Metric | Value |
+|---|---|
+| TTFB | ~10 ms |
+| DOMContentLoaded | ~140 ms |
+| Load | ~155 ms |
+| LCP | ~285 ms |
+| JS (gzip, main + secondary) | ~134 KB |
+
+Production is fast. Perceived "slow loading" was **`yarn dev`**, not the site:
+the repo is npm-locked, so yarn re-resolved the whole tree each start. Fix:
+use `npm run dev` (~6-7s cold, ~80 ms warm navigations); `packageManager` is
+pinned to npm and `yarn.lock` is gitignored. Dev is further sped up by
+pre-bundling heavy deps (`optimizeDeps.include`) and Vite entry `warmup`.
+
 ### Delivery
 - Added multi-stage **Dockerfile** (Node build -> nginx serving the static
   `.output/public`) and `.dockerignore`; `docker build` passes.

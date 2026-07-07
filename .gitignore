@@ -24,3 +24,6 @@ playwright/.cache/
 *.log
 .vscode/
 .idea/
+
+# single package manager: npm
+yarn.lock
