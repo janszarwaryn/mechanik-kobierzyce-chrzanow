@@ -26,8 +26,7 @@ export interface ProductGroup {
 export interface Review {
   id: string
   author: string
-  /** short role/context, e.g. "Wspólnota mieszkaniowa" */
-  role: string
+  /** 1-5, may be a half step (e.g. 4.5) */
   rating: number
   text: { pl: string; en: string }
 }

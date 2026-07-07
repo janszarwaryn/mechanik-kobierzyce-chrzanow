@@ -54,11 +54,12 @@ describe('product data', () => {
 })
 
 describe('reviews data', () => {
-  it('has bilingual, attributed, short reviews', () => {
-    expect(reviews.length).toBeGreaterThanOrEqual(3)
+  it('has many bilingual, attributed reviews with valid ratings', () => {
+    expect(reviews.length).toBeGreaterThanOrEqual(10)
     for (const r of reviews) {
       expect(r.author.trim().length).toBeGreaterThan(0)
-      expect(r.role.trim().length).toBeGreaterThan(0)
+      // first name (+ optional initial) only, no full surname
+      expect(r.author).not.toMatch(/[a-ząćęłńóśżź]{4,}\s+[A-ZĄĆĘŁŃÓŚŻŹ][a-ząćęłńóśżź]{3,}/)
       expect(r.text.pl.trim().length).toBeGreaterThan(0)
       expect(r.text.en.trim().length).toBeGreaterThan(0)
       expect(r.rating).toBeGreaterThanOrEqual(1)

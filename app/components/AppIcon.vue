@@ -23,6 +23,8 @@ import {
   PhShieldCheck,
   PhBicycle,
   PhInfo,
+  PhStarHalf,
+  PhGoogleLogo,
 } from '@phosphor-icons/vue'
 
 const registry: Record<string, unknown> = {
@@ -49,6 +51,8 @@ const registry: Record<string, unknown> = {
   PhShieldCheck,
   PhBicycle,
   PhInfo,
+  PhStarHalf,
+  PhGoogleLogo,
 }
 
 const props = withDefaults(

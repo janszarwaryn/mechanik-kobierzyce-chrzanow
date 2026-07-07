@@ -54,7 +54,8 @@
       "title": "Nasze realizacje"
     },
     "reviews": {
-      "title": "Opinie klientów"
+      "title": "Opinie klientów",
+      "source": "Opinia z Google"
     },
     "contactCta": {
       "title": "Potrzebujesz pomocy?",

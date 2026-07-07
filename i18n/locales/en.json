@@ -54,7 +54,8 @@
       "title": "Our work"
     },
     "reviews": {
-      "title": "Customer reviews"
+      "title": "Customer reviews",
+      "source": "Google review"
     },
     "contactCta": {
       "title": "Need help?",
