@@ -35,6 +35,20 @@ Date: 2026-07-06
   blokady parkingowe, stojaki rowerowe + locality terms).
 - Fixed non-descriptive home nav link text flagged by the link checker.
 
+### Security
+
+- **SQL injection: not applicable.** The site is a static Nuxt SSG build served
+  as flat files by nginx. There is no database, no SQL, no server-side query
+  layer, and (after the contact form was removed) no user-submitted input that
+  reaches a server. There is no SQLi attack surface.
+- **XSS:** the only `innerHTML` usage is JSON-LD injection via
+  `JSON.stringify()` of first-party data (no user input), so it cannot inject
+  markup. All page copy is bound through Vue text interpolation (escaped).
+- **Headers:** nginx sends `X-Content-Type-Options`, `X-Frame-Options`,
+  `Referrer-Policy`, `Permissions-Policy` and a `Content-Security-Policy`
+  (self + inline for hydration, Google Maps frame only).
+- **External links:** all `target="_blank"` links use `rel="noopener"`.
+
 ### Delivery
 - Added multi-stage **Dockerfile** (Node build -> nginx serving the static
   `.output/public`) and `.dockerignore`; `docker build` passes.

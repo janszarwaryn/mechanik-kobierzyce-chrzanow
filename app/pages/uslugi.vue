@@ -17,9 +17,15 @@ const why = [
   <div>
     <PageHeader :title="t('services.title')" :subtitle="t('services.subtitle')" />
 
-    <!-- keyword-rich lead intro -->
+    <!-- keyword-rich lead intro + best-mechanic hook -->
     <section class="mx-auto max-w-3xl px-4 pt-12 md:px-6 lg:px-8">
       <Reveal>
+        <p
+          class="mb-4 inline-flex items-center gap-2 rounded-full border border-accent-500/40 bg-accent-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-accent-700"
+        >
+          <AppIcon name="PhStar" :size="14" weight="fill" />
+          {{ t('services.bestHook') }}
+        </p>
         <p class="text-lg leading-relaxed text-steel-700">
           {{ t('services.lead') }}
         </p>
@@ -37,6 +43,18 @@ const why = [
         <div class="lg:sticky lg:top-24 lg:self-start">
           <ScheduleTable />
         </div>
+      </div>
+    </section>
+
+    <!-- detailed, anchored SEO sections per service -->
+    <section class="mx-auto max-w-7xl px-4 pb-8 md:px-6 lg:px-8">
+      <Reveal>
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
+          {{ t('services.detailsEyebrow') }}
+        </p>
+      </Reveal>
+      <div class="mt-2">
+        <ServiceDetail v-for="s in services" :key="s.id" :service="s" />
       </div>
     </section>
 

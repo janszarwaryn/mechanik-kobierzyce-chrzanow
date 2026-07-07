@@ -3,7 +3,9 @@
 
 export interface ServiceItem {
   id: string
-  /** i18n key prefix under `services.items.<id>` (.title/.desc) */
+  /** URL anchor slug on the services page, e.g. "wulkanizacja" */
+  slug: string
+  /** i18n key prefix under `services.items.<id>` (.title/.desc/.h2/.long/.p1-3) */
   key: string
   icon: string
 }

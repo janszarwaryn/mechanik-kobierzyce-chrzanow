@@ -6,21 +6,22 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <article
-    class="flex gap-4 rounded-2xl border border-steel-200 bg-steel-50 p-5 transition-colors hover:border-accent-500/60 dark:border-steel-800 dark:bg-steel-900"
+  <a
+    :href="`#${props.service.slug}`"
+    class="flex h-full gap-4 rounded-2xl border border-steel-200 bg-steel-50 p-5 transition-colors hover:border-accent-500/60"
   >
     <span
-      class="grid size-12 shrink-0 place-items-center rounded-xl bg-accent-500/15 text-accent-600 dark:text-accent-400"
+      class="grid size-12 shrink-0 place-items-center rounded-xl bg-accent-500/15 text-accent-600"
     >
       <AppIcon :name="service.icon" :size="24" />
     </span>
     <div>
-      <h3 class="font-display font-bold text-steel-900 dark:text-steel-50">
+      <h3 class="font-display font-bold text-steel-900">
         {{ t(`${props.service.key}.title`) }}
       </h3>
-      <p class="mt-1 text-sm leading-relaxed text-steel-600 dark:text-steel-400">
+      <p class="mt-1 text-sm leading-relaxed text-steel-600">
         {{ t(`${props.service.key}.desc`) }}
       </p>
     </div>
-  </article>
+  </a>
 </template>

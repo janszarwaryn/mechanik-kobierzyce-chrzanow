@@ -67,27 +67,57 @@
     "items": {
       "tires": {
         "title": "Naprawa i wymiana opon",
-        "desc": "Wulkanizacja, wymiana i wyważanie opon dla samochodów osobowych i dostawczych."
+        "desc": "Wulkanizacja, wymiana i wyważanie opon dla samochodów osobowych i dostawczych.",
+        "h2": "Wulkanizacja i wymiana opon - Kobierzyce, Chrzanów",
+        "long": "Profesjonalna wulkanizacja i serwis opon w gminie Kobierzyce. Wymieniamy, naprawiamy i wyważamy opony w samochodach osobowych oraz dostawczych. Sezonowa wymiana opon, naprawa przebić i uszkodzeń - szybko i w rozsądnej cenie, kilkanaście minut od Wrocławia.",
+        "p1": "Wymiana i wyważanie opon osobowych i dostawczych",
+        "p2": "Naprawa przebić, gwoździ i uszkodzeń bieżnika",
+        "p3": "Sezonowa wymiana i przechowywanie opon"
       },
       "suspension": {
         "title": "Naprawa zawieszenia",
-        "desc": "Diagnostyka i naprawa amortyzatorów, wahaczy i elementów zawieszenia."
+        "desc": "Diagnostyka i naprawa amortyzatorów, wahaczy i elementów zawieszenia.",
+        "h2": "Naprawa zawieszenia - Kobierzyce i Wrocław",
+        "long": "Diagnostyka i naprawa zawieszenia w Chrzanowie pod Wrocławiem. Wymieniamy amortyzatory, wahacze, łożyska, sprężyny oraz elementy układu kierowniczego. Stukanie, bujanie czy nierówne zużycie opon - znajdziemy przyczynę i naprawimy.",
+        "p1": "Wymiana amortyzatorów, sprężyn i wahaczy",
+        "p2": "Naprawa łożysk i układu kierowniczego",
+        "p3": "Diagnostyka stuków i drgań zawieszenia"
       },
       "mechanics": {
         "title": "Mechanika samochodowa",
-        "desc": "Ogólna mechanika, przeglądy i bieżące naprawy pojazdów."
+        "desc": "Ogólna mechanika, przeglądy i bieżące naprawy pojazdów.",
+        "h2": "Mechanika samochodowa - warsztat Chrzanów, gmina Kobierzyce",
+        "long": "Kompleksowa mechanika samochodowa: przeglądy, wymiana oleju i filtrów, układ hamulcowy, rozrząd oraz bieżące naprawy aut wszystkich marek. Ponad 20 lat doświadczenia w obsłudze kierowców z Kobierzyc, Bielan Wrocławskich i Wrocławia.",
+        "p1": "Przeglądy, wymiana oleju i filtrów",
+        "p2": "Układ hamulcowy i wymiana klocków",
+        "p3": "Rozrząd i bieżące naprawy silnika"
       },
       "gasket": {
         "title": "Wymiana uszczelek pod głowicą",
-        "desc": "Naprawa uszczelki pod głowicą i usuwanie wycieków."
+        "desc": "Naprawa uszczelki pod głowicą i usuwanie wycieków.",
+        "h2": "Wymiana uszczelki pod głowicą - Kobierzyce",
+        "long": "Naprawa i wymiana uszczelki pod głowicą oraz usuwanie wycieków płynów. Przegrzewanie silnika, biały dym czy mieszanie się płynów - diagnozujemy i naprawiamy głowicę fachowo, z uczciwą wyceną ustaloną z góry.",
+        "p1": "Wymiana uszczelki pod głowicą",
+        "p2": "Sprawdzenie i planowanie głowicy",
+        "p3": "Usuwanie wycieków oleju i płynów"
       },
       "parts": {
         "title": "Montaż zakupionych części",
-        "desc": "Montujemy części dostarczone przez klienta."
+        "desc": "Montujemy części dostarczone przez klienta.",
+        "h2": "Montaż części powierzonych - Chrzanów pod Wrocławiem",
+        "long": "Montujemy części dostarczone przez klienta - kupujesz online lub w sklepie, a my montujemy fachowo. Oszczędzasz na częściach, a samą robociznę wyceniamy z góry, bez niespodzianek.",
+        "p1": "Montaż części kupionych przez klienta",
+        "p2": "Doradztwo w doborze zamienników",
+        "p3": "Uczciwa wycena samej robocizny"
       },
       "general": {
         "title": "Ogólna naprawa",
-        "desc": "Kompleksowa naprawa samochodu w jednym miejscu."
+        "desc": "Kompleksowa naprawa samochodu w jednym miejscu.",
+        "h2": "Ogólna naprawa samochodu - jeden warsztat",
+        "long": "Kompleksowa naprawa auta w jednym miejscu - od diagnostyki, przez mechanikę, po wulkanizację. Naprawiamy samochody osobowe i dostawcze wszystkich marek w gminie Kobierzyce, kilkanaście minut od Wrocławia.",
+        "p1": "Diagnostyka usterek i błędów",
+        "p2": "Naprawy mechaniczne i eksploatacyjne",
+        "p3": "Auta osobowe i dostawcze wszystkich marek"
       }
     },
     "lead": "Warsztat samochodowy w Chrzanowie (gmina Kobierzyce, koło Wrocławia) z ponad 20-letnim doświadczeniem. Kompleksowa mechanika, wulkanizacja i naprawa aut osobowych oraz dostawczych - szybko, uczciwie i w rozsądnej cenie.",
@@ -99,7 +129,10 @@
     "why2Title": "Uczciwa wycena",
     "why2Body": "Zakres i koszt naprawy ustalamy z góry, bez niespodzianek.",
     "why3Title": "Blisko Wrocławia",
-    "why3Body": "Chrzanów w gminie Kobierzyce - kilkanaście minut od miasta."
+    "why3Body": "Chrzanów w gminie Kobierzyce - kilkanaście minut od miasta.",
+    "bestHook": "Najlepszy mechanik w gminie Kobierzyce",
+    "bestDesc": "Warsztat, wulkanizacja i naprawa aut w Chrzanowie - uczciwie, fachowo, kilkanaście minut od Wrocławia.",
+    "detailsEyebrow": "Zakres usług"
   },
   "blocks": {
     "title": "Blokady parkingowe Kobierzyce i Wrocław",

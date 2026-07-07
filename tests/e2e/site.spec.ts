@@ -13,6 +13,29 @@ test.describe('navigation', () => {
     await page.goto('/')
     await expect(page.locator('h1')).toHaveCount(1)
   })
+
+  test('services dropdown exposes per-service anchor links', async ({ page }) => {
+    await page.goto('/')
+    await page.getByRole('navigation', { name: 'Główna nawigacja' }).getByText('Usługi').hover()
+    const link = page.locator('a[href$="/uslugi#wulkanizacja"]').first()
+    await expect(link).toBeVisible()
+  })
+
+  test('service anchor section renders on the services page', async ({ page }) => {
+    await page.goto('/uslugi#wulkanizacja')
+    await expect(page.locator('#wulkanizacja h2')).toContainText(/Wulkanizacja/)
+  })
+})
+
+test.describe('mobile menu', () => {
+  test.use({ viewport: { width: 390, height: 844 } })
+  test('hamburger opens a drawer with service sub-items', async ({ page }) => {
+    await page.goto('/')
+    await page.getByRole('button', { name: /menu/i }).click()
+    const drawer = page.getByRole('navigation', { name: 'Nawigacja mobilna' })
+    await expect(drawer).toBeVisible()
+    await expect(drawer.locator('a[href$="/uslugi#zawieszenie"]')).toBeVisible()
+  })
 })
 
 test.describe('i18n', () => {

@@ -67,27 +67,57 @@
     "items": {
       "tires": {
         "title": "Tyre repair and replacement",
-        "desc": "Vulcanisation, replacement and balancing of tyres for cars and vans."
+        "desc": "Vulcanisation, replacement and balancing of tyres for cars and vans.",
+        "h2": "Tyre service and replacement - Kobierzyce, Chrzanów",
+        "long": "Professional tyre service and vulcanisation in the Kobierzyce municipality. We replace, repair and balance tyres for cars and vans. Seasonal tyre changes, puncture and damage repair - fast and fairly priced, minutes from Wrocław.",
+        "p1": "Tyre replacement and balancing for cars and vans",
+        "p2": "Puncture, nail and tread damage repair",
+        "p3": "Seasonal tyre change and storage"
       },
       "suspension": {
         "title": "Suspension repair",
-        "desc": "Diagnostics and repair of shock absorbers, arms and suspension parts."
+        "desc": "Diagnostics and repair of shock absorbers, arms and suspension parts.",
+        "h2": "Suspension repair - Kobierzyce and Wrocław",
+        "long": "Diagnostics and suspension repair in Chrzanów near Wrocław. We replace shock absorbers, arms, bearings, springs and steering components. Knocking, bouncing or uneven tyre wear - we find the cause and fix it.",
+        "p1": "Shock absorbers, springs and arms replacement",
+        "p2": "Bearing and steering system repair",
+        "p3": "Diagnostics of knocks and vibrations"
       },
       "mechanics": {
         "title": "Car mechanics",
-        "desc": "General mechanics, inspections and routine vehicle repairs."
+        "desc": "General mechanics, inspections and routine vehicle repairs.",
+        "h2": "Car mechanics - workshop Chrzanów, Kobierzyce municipality",
+        "long": "Full car mechanics: inspections, oil and filter changes, brakes, timing and routine repairs of all makes. Over 20 years serving drivers from Kobierzyce, Bielany Wrocławskie and Wrocław.",
+        "p1": "Inspections, oil and filter changes",
+        "p2": "Brake system and pad replacement",
+        "p3": "Timing and routine engine repairs"
       },
       "gasket": {
         "title": "Head gasket replacement",
-        "desc": "Head gasket repair and leak elimination."
+        "desc": "Head gasket repair and leak elimination.",
+        "h2": "Head gasket replacement - Kobierzyce",
+        "long": "Head gasket repair and replacement and fluid leak elimination. Engine overheating, white smoke or mixing fluids - we diagnose and repair the head professionally, with a quote agreed upfront.",
+        "p1": "Head gasket replacement",
+        "p2": "Head check and resurfacing",
+        "p3": "Oil and fluid leak elimination"
       },
       "parts": {
         "title": "Fitting supplied parts",
-        "desc": "We fit parts supplied by the customer."
+        "desc": "We fit parts supplied by the customer.",
+        "h2": "Fitting supplied parts - Chrzanów near Wrocław",
+        "long": "We fit parts supplied by the customer - buy online or in a shop, we fit them professionally. You save on parts and we quote the labour upfront, no surprises.",
+        "p1": "Fitting customer-supplied parts",
+        "p2": "Advice on choosing replacements",
+        "p3": "Honest labour-only quote"
       },
       "general": {
         "title": "General repair",
-        "desc": "Comprehensive car repair in one place."
+        "desc": "Comprehensive car repair in one place.",
+        "h2": "General car repair - one workshop",
+        "long": "Comprehensive car repair in one place - from diagnostics through mechanics to tyre service. We repair cars and vans of all makes in the Kobierzyce municipality, minutes from Wrocław.",
+        "p1": "Fault and error diagnostics",
+        "p2": "Mechanical and service repairs",
+        "p3": "Cars and vans of all makes"
       }
     },
     "lead": "A car garage in Chrzanów (Kobierzyce municipality, near Wrocław) with over 20 years of experience. Full mechanics, tyre service and repair of cars and vans - fast, honest and fairly priced.",
@@ -99,7 +129,10 @@
     "why2Title": "Honest quote",
     "why2Body": "Scope and cost agreed upfront, no surprises.",
     "why3Title": "Close to Wrocław",
-    "why3Body": "Chrzanów in the Kobierzyce municipality - minutes from the city."
+    "why3Body": "Chrzanów in the Kobierzyce municipality - minutes from the city.",
+    "bestHook": "The best mechanic in the Kobierzyce municipality",
+    "bestDesc": "Garage, tyre service and car repair in Chrzanów - honest, professional, minutes from Wrocław.",
+    "detailsEyebrow": "Scope of services"
   },
   "blocks": {
     "title": "Parking blocks Kobierzyce and Wrocław",
