@@ -86,6 +86,24 @@ pre-bundling heavy deps (`optimizeDeps.include`) and Vite entry `warmup`.
 - Added multi-stage **Dockerfile** (Node build -> nginx serving the static
   `.output/public`) and `.dockerignore`; `docker build` passes.
 
+**Docker hardening pass (issues found and fixed):**
+- **Healthcheck never went healthy**: `wget http://localhost/` resolved to IPv6
+  `::1` while nginx listened IPv4-only -> exit 1 forever. Fixed: probe
+  `127.0.0.1` and add `listen [::]:80`.
+- **Security headers were dropped on `/_nuxt/` and `/_ipx/`**: nginx does not
+  inherit `add_header` into a location that sets its own. Fixed by moving the
+  headers into a shared snippet `include`d in the server block and both asset
+  locations.
+- **Duplicate `Cache-Control`** on `/_nuxt/` (`expires` + `add_header`).
+  Consolidated to a single `public, max-age=31536000, immutable`.
+- **`site.webmanifest` served as `application/octet-stream`**. Added the correct
+  `application/manifest+json` type.
+- Added `text/xml` + manifest to `gzip_types` (sitemaps now gzipped), `gzip_vary`,
+  a BuildKit npm cache mount, and `--start-period`/`--retries` on the healthcheck.
+- Verified: `nginx -t` OK, all routes 200, `/nope` -> 404, container reports
+  `healthy`, image ~66 MB. Sitemap chain is correct (`robots.txt` ->
+  `sitemap_index.xml` -> `__sitemap__/{pl-PL,en-US}.xml`, all valid XML).
+
 ## How to reproduce
 
 ```bash
