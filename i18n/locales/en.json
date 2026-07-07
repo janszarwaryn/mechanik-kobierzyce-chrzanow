@@ -1,7 +1,8 @@
 {
   "brand": {
     "name": "Mechanik Kobierzyce",
-    "tagline": "Garage, parking blocks and bike stands"
+    "tagline": "Garage, parking blocks and bike stands",
+    "sub": "Chrzanów · Your professional mechanic"
   },
   "nav": {
     "home": "Home",
@@ -10,7 +11,8 @@
     "stands": "Bike stands",
     "about": "About blocks",
     "contact": "Contact",
-    "homeAria": "Home - Mechanik Kobierzyce"
+    "homeAria": "Home - Mechanik Kobierzyce",
+    "products": "Products"
   },
   "cta": {
     "book": "Book a visit",
@@ -87,7 +89,17 @@
         "title": "General repair",
         "desc": "Comprehensive car repair in one place."
       }
-    }
+    },
+    "lead": "A car garage in Chrzanów (Kobierzyce municipality, near Wrocław) with over 20 years of experience. Full mechanics, tyre service and repair of cars and vans - fast, honest and fairly priced.",
+    "localTitle": "We serve drivers from the whole area",
+    "localBody": "The workshop at Lipowa 24A is an easy drive from Kobierzyce, Bielany Wrocławskie, Tyniec Mały, Wysoka and Wrocław. We repair cars of all makes - call to arrange a convenient time.",
+    "whyTitle": "Why drivers trust us",
+    "why1Title": "20+ years of experience",
+    "why1Body": "Two decades of hands-on work on cars and vans.",
+    "why2Title": "Honest quote",
+    "why2Body": "Scope and cost agreed upfront, no surprises.",
+    "why3Title": "Close to Wrocław",
+    "why3Body": "Chrzanów in the Kobierzyce municipality - minutes from the city."
   },
   "blocks": {
     "title": "Parking blocks Kobierzyce and Wrocław",

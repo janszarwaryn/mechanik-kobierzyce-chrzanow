@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
-/* Dark mode driven by a data attribute on <html> (manual toggle),
-   falling back to the OS preference. */
+/* Light-only site. The `dark:` variant is kept for authoring convenience but
+   never activates: it is gated behind [data-theme='dark'], which is never set. */
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
 
 @theme {
@@ -33,7 +33,7 @@
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
 html {

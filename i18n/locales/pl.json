@@ -1,16 +1,18 @@
 {
   "brand": {
     "name": "Mechanik Kobierzyce",
-    "tagline": "Warsztat, blokady parkingowe i stojaki rowerowe"
+    "tagline": "Warsztat, blokady parkingowe i stojaki rowerowe",
+    "sub": "Chrzanów · Twój profesjonalny mechanik"
   },
   "nav": {
-    "home": "Start",
+    "home": "Główna",
     "services": "Usługi",
     "blocks": "Blokady parkingowe",
     "stands": "Stojaki rowerowe",
     "about": "O blokadach",
     "contact": "Kontakt",
-    "homeAria": "Strona główna - Mechanik Kobierzyce"
+    "homeAria": "Strona główna - Mechanik Kobierzyce",
+    "products": "Produkty"
   },
   "cta": {
     "book": "Umów wizytę",
@@ -87,7 +89,17 @@
         "title": "Ogólna naprawa",
         "desc": "Kompleksowa naprawa samochodu w jednym miejscu."
       }
-    }
+    },
+    "lead": "Warsztat samochodowy w Chrzanowie (gmina Kobierzyce, koło Wrocławia) z ponad 20-letnim doświadczeniem. Kompleksowa mechanika, wulkanizacja i naprawa aut osobowych oraz dostawczych - szybko, uczciwie i w rozsądnej cenie.",
+    "localTitle": "Obsługujemy kierowców z całej okolicy",
+    "localBody": "Do warsztatu przy ul. Lipowa 24A łatwo dojedziesz z Kobierzyc, Bielan Wrocławskich, Tyńca Małego, Wysokiej i Wrocławia. Naprawiamy auta wszystkich marek - umów się telefonicznie na dogodny termin.",
+    "whyTitle": "Dlaczego kierowcy nam ufają",
+    "why1Title": "20+ lat doświadczenia",
+    "why1Body": "Dwie dekady praktyki przy autach osobowych i dostawczych.",
+    "why2Title": "Uczciwa wycena",
+    "why2Body": "Zakres i koszt naprawy ustalamy z góry, bez niespodzianek.",
+    "why3Title": "Blisko Wrocławia",
+    "why3Body": "Chrzanów w gminie Kobierzyce - kilkanaście minut od miasta."
   },
   "blocks": {
     "title": "Blokady parkingowe Kobierzyce i Wrocław",

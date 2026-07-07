@@ -27,12 +27,13 @@ describe('page smoke', () => {
     })
   }
 
-  it('kontakt renders the contact form with required inputs', async () => {
+  it('kontakt shows contact info with a tel: call button and no form', async () => {
     const wrapper = await mountSuspended(Kontakt)
-    expect(wrapper.find('form').exists()).toBe(true)
-    expect(wrapper.find('#cf-name').exists()).toBe(true)
-    expect(wrapper.find('#cf-email').exists()).toBe(true)
-    expect(wrapper.find('#cf-message').exists()).toBe(true)
+    expect(wrapper.find('form').exists()).toBe(false)
+    const tel = wrapper.findAll('a').find((a) => a.attributes('href')?.startsWith('tel:'))
+    expect(tel).toBeTruthy()
+    const mailto = wrapper.findAll('a').find((a) => a.attributes('href')?.startsWith('mailto:'))
+    expect(mailto).toBeTruthy()
   })
 
   it('product pages render one card per catalogue item', async () => {

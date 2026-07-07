@@ -66,17 +66,13 @@ test.describe('SEO', () => {
   })
 })
 
-test.describe('contact form', () => {
-  test('shows validation errors then reaches success', async ({ page }) => {
+test.describe('contact page', () => {
+  test('shows a tel: call button and has no form', async ({ page }) => {
     await page.goto('/kontakt')
-    await page.getByRole('button', { name: /Wyślij wiadomość/ }).click()
-    await expect(page.locator('[role="alert"]')).toBeVisible()
-
-    await page.locator('#cf-name').fill('Jan Kowalski')
-    await page.locator('#cf-email').fill('jan@example.com')
-    await page.locator('#cf-message').fill('Proszę o wycenę blokady parkingowej typu U.')
-    await page.getByRole('button', { name: /Wyślij wiadomość/ }).click()
-    await expect(page.locator('[role="status"]')).toBeVisible()
+    expect(await page.locator('form').count()).toBe(0)
+    const tel = page.locator('a[href^="tel:"]').first()
+    await expect(tel).toBeVisible()
+    await expect(tel).toHaveAttribute('href', /\+48/)
   })
 })
 

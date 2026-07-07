@@ -2,7 +2,6 @@
 import { site } from '~/data/site'
 
 const { t } = useI18n()
-const localePath = useLocalePath()
 </script>
 
 <template>
@@ -17,13 +16,10 @@ const localePath = useLocalePath()
           </h2>
           <p class="mt-2 max-w-xl text-steel-300">{{ t('home.contactCta.desc') }}</p>
         </div>
-        <div class="flex flex-wrap gap-3">
+        <div class="shrink-0">
           <BaseButton :href="`tel:${site.phones[0]}`">
             <AppIcon name="PhPhone" :size="18" />
-            {{ t('cta.call') }}
-          </BaseButton>
-          <BaseButton :to="localePath('/kontakt')" variant="secondary">
-            {{ t('cta.contact') }}
+            {{ t('cta.call') }} {{ site.phones[0] }}
           </BaseButton>
         </div>
       </div>

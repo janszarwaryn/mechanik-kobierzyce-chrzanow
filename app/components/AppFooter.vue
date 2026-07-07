@@ -19,12 +19,10 @@ const year = 2026
   <footer class="border-t border-steel-200 bg-steel-100 dark:border-steel-800 dark:bg-steel-900">
     <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6 lg:px-8">
       <div>
-        <p class="flex items-center gap-2 font-display text-lg font-bold text-steel-900 dark:text-steel-50">
-          <span class="grid size-8 place-items-center rounded-lg bg-accent-500 text-steel-950">
-            <AppIcon name="PhWrench" :size="18" weight="bold" />
-          </span>
+        <p class="font-display text-lg font-bold text-steel-900 dark:text-steel-50">
           {{ t('brand.name') }}
         </p>
+        <p class="text-sm font-medium text-steel-500">{{ t('brand.sub') }}</p>
         <p class="mt-3 max-w-xs text-sm text-steel-600 dark:text-steel-400">
           {{ t('footer.about') }}
         </p>
