@@ -13,10 +13,11 @@ const { t } = useI18n()
       <NuxtImg
         :src="product.image"
         :alt="product.imageAlt"
-        class="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+        class="size-full bg-steel-200 object-cover transition-transform duration-500 group-hover:scale-105"
         width="480"
         height="360"
         loading="lazy"
+        :placeholder="[40, 30, 50, 4]"
       />
       <span
         class="absolute left-3 top-3 rounded-full bg-accent-500 px-3 py-1 text-xs font-semibold text-steel-950"

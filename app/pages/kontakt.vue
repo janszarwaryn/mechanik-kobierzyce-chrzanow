@@ -68,7 +68,7 @@ usePageBreadcrumb(t('contact.title'))
         <div>
           <iframe
             :src="site.mapEmbed"
-            class="h-full min-h-96 w-full rounded-3xl border border-steel-200"
+            class="h-full min-h-96 w-full rounded-3xl border border-steel-200 bg-steel-100"
             style="border: 0"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

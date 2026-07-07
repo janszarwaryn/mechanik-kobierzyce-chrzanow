@@ -29,10 +29,11 @@ usePageBreadcrumb(t('about.title'))
           <NuxtImg
             src="/img/blokada_2_1.jpg"
             :alt="t('blocks.items.m.title')"
-            class="aspect-[4/3] w-full rounded-3xl object-cover ring-1 ring-steel-200/60 dark:ring-steel-800"
+            class="aspect-[4/3] w-full rounded-3xl bg-steel-100 object-cover ring-1 ring-steel-200/60 dark:ring-steel-800"
             width="520"
             height="390"
             loading="lazy"
+            :placeholder="[40, 30, 50, 4]"
           />
           <div class="rounded-2xl border border-steel-200 bg-steel-50 p-5 dark:border-steel-800 dark:bg-steel-900">
             <h2 class="font-display text-sm font-semibold uppercase tracking-wide text-steel-500">

@@ -73,10 +73,11 @@ const why = [
           <NuxtImg
             src="/img/work-2.jpg"
             :alt="t('services.localTitle')"
-            class="aspect-[4/3] w-full rounded-3xl object-cover ring-1 ring-steel-200/60"
+            class="aspect-[4/3] w-full rounded-3xl bg-steel-100 object-cover ring-1 ring-steel-200/60"
             width="640"
             height="480"
             loading="lazy"
+            :placeholder="[40, 30, 50, 4]"
           />
         </Reveal>
         <Reveal :delay="100">

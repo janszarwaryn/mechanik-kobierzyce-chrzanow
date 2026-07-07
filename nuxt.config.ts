@@ -65,6 +65,7 @@ export default defineNuxtConfig({
   ogImage: { enabled: false },
 
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       htmlAttrs: { lang: 'pl' },
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],

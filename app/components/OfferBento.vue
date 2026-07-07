@@ -38,10 +38,11 @@ const cells = [
           <NuxtImg
             :src="c.image"
             :alt="t(`${c.key}.title`)"
-            class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
+            class="absolute inset-0 size-full bg-steel-200 object-cover transition-transform duration-500 group-hover:scale-105"
             width="640"
             height="480"
             loading="lazy"
+            :placeholder="[40, 30, 50, 4]"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-steel-950/85 via-steel-950/30 to-transparent" />
           <div class="relative p-6">

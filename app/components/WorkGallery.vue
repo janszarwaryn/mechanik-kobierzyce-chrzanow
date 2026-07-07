@@ -21,10 +21,11 @@ const images = [
         <NuxtImg
           :src="img"
           :alt="`${t('home.gallery.title')} ${i + 1}`"
-          class="w-full rounded-2xl object-cover ring-1 ring-steel-200/60 dark:ring-steel-800"
+          class="w-full rounded-2xl bg-steel-100 object-cover ring-1 ring-steel-200/60 dark:ring-steel-800"
           width="480"
           height="360"
           loading="lazy"
+          :placeholder="[40, 30, 50, 4]"
         />
       </Reveal>
     </div>
