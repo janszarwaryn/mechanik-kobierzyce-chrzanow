@@ -7,12 +7,10 @@ const localePath = useLocalePath()
 
 const productLinks = [
   { key: 'nav.blocks', path: '/blokady-parkingowe', icon: 'PhShieldCheck' },
+  { key: 'nav.about', path: '/opis-blokady', icon: 'PhInfo' },
   { key: 'nav.stands', path: '/stojaki-rowerowe', icon: 'PhBicycle' },
 ]
-const tailLinks = [
-  { key: 'nav.about', path: '/opis-blokady' },
-  { key: 'nav.contact', path: '/kontakt' },
-]
+const tailLinks = [{ key: 'nav.contact', path: '/kontakt' }]
 
 const serviceHref = (slug: string) => `${localePath('/uslugi')}#${slug}`
 

@@ -22,6 +22,7 @@ import {
   PhCaretDown,
   PhShieldCheck,
   PhBicycle,
+  PhInfo,
 } from '@phosphor-icons/vue'
 
 const registry: Record<string, unknown> = {
@@ -47,6 +48,7 @@ const registry: Record<string, unknown> = {
   PhCaretDown,
   PhShieldCheck,
   PhBicycle,
+  PhInfo,
 }
 
 const props = withDefaults(
