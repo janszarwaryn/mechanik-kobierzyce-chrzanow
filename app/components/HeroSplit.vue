@@ -10,7 +10,7 @@ const localePath = useLocalePath()
       class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-steel-100 to-steel-50 dark:from-steel-900 dark:to-steel-950"
     />
     <div
-      class="mx-auto grid max-w-7xl items-center gap-10 px-4 pt-16 pb-16 md:px-6 lg:min-h-[calc(100dvh-4rem)] lg:grid-cols-2 lg:gap-12 lg:px-8 lg:pt-24"
+      class="mx-auto grid max-w-7xl items-center gap-8 px-4 pt-10 pb-12 sm:gap-10 sm:pt-16 sm:pb-16 md:px-6 lg:min-h-[calc(100dvh-4rem)] lg:grid-cols-2 lg:gap-12 lg:px-8 lg:pt-24"
     >
       <div>
         <p
@@ -20,11 +20,13 @@ const localePath = useLocalePath()
           {{ t('home.hero.eyebrow') }}
         </p>
         <h1
-          class="font-display text-4xl font-bold leading-[1.05] tracking-tight text-steel-900 md:text-5xl lg:text-6xl dark:text-steel-50"
+          class="font-display text-2xl font-bold leading-[1.1] tracking-tight text-balance text-steel-900 sm:text-3xl md:text-5xl lg:text-6xl dark:text-steel-50"
         >
           {{ t('home.hero.title') }}
         </h1>
-        <p class="mt-5 max-w-xl text-lg leading-relaxed text-steel-600 dark:text-steel-300">
+        <p
+          class="mt-4 max-w-xl text-sm leading-relaxed text-steel-600 sm:mt-5 sm:text-base md:text-lg dark:text-steel-300"
+        >
           {{ t('home.hero.subtitle') }}
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
