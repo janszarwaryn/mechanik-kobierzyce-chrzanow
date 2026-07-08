@@ -39,7 +39,7 @@ onUnmounted(() => {
         <span class="font-display text-lg font-bold tracking-tight text-steel-900 sm:text-xl">
           {{ t('brand.name') }}
         </span>
-        <span class="mt-0.5 text-[11px] font-medium tracking-wide text-steel-500">
+        <span class="mt-0.5 hidden text-[11px] font-medium tracking-wide text-steel-500 sm:block">
           {{ t('brand.sub') }}
         </span>
       </NuxtLink>
