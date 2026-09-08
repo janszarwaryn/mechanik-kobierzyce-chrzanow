@@ -25,9 +25,6 @@ usePageBreadcrumb(t('contact.title'))
               <AppIcon name="PhPhone" :size="18" />
               {{ t('cta.call') }} {{ site.phones[0] }}
             </BaseButton>
-            <p class="mt-3 text-sm text-steel-400">
-              {{ site.phones[1] }}
-            </p>
           </div>
 
           <div class="grid gap-4 sm:grid-cols-2">

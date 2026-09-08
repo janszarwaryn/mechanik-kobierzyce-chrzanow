@@ -6,7 +6,7 @@ export const site: SiteInfo = {
   legalName: 'Mechanik Kobierzyce',
   domain: 'mechanik-kobierzyce.pl',
   url: 'https://mechanik-kobierzyce.pl',
-  phones: ['+48601996692', '+48515720761'],
+  phones: ['+48601996692'],
   email: 'mechanik.chrzanow@gmail.com',
   address: {
     street: 'Lipowa 24A',
